@@ -1,0 +1,737 @@
+
+
+<!DOCTYPE html>
+
+<html lang="zh-CN" >
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/LOGO/avatar.webp">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/LOGO/avatar.webp">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#1f3144">
+  <meta name="description" content="会持续更新~">
+  <meta name="author" content="E=mc²">
+  <meta name="keywords" content="">
+  
+  <title>hexo美化教程 - E=mc²</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      
+        
+          
+          
+          
+        
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.min.css" />
+      
+      
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.css" />
+      
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2437176_jvyfsc48i5d.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxh20061128/image/project/font/Muyao-Softbrush.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxh20061128/image/project/shubiao/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxh20061128/image/project/gundongtiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxh20061128/image/project/bg.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"hexo.lxh2006.tk","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>E=mc²的博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-posts"></i>
+                文章
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/">
+                    <i class="iconfont icon-archives"></i>
+                    归档
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/">
+                    <i class="iconfont icon-categories"></i>
+                    分类
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/">
+                    <i class="iconfont icon-tags"></i>
+                    标签
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-me"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-links"></i>
+                友链
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/love/">
+                <i class="iconfont icon-loveme"></i>
+                表白
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://travellings.now.sh">
+                <i class="iconfont icon-subway"></i>
+                开往
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="hexo美化教程">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      E=mc²
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-03-14 18:26" pubdate>
+        2021年3月14日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      23
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">hexo美化教程</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2021年5月9日 下午
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h1 id="鼠标点击烟花爆炸效果"><a href="#鼠标点击烟花爆炸效果" class="headerlink" title="鼠标点击烟花爆炸效果"></a>鼠标点击烟花爆炸效果</h1><p>作者链接：<a target="_blank" rel="noopener" href="https://www.iowen.cn/canvas-click-effect-second-edition/">https://www.iowen.cn/canvas-click-effect-second-edition/</a></p>
+<p>js下载：<a target="_blank" rel="noopener" href="https://wwa.lanzous.com/idow0oyhoqf">https://wwa.lanzous.com/idow0oyhoqf</a></p>
+<p>打开 themes-主题名-config.yml 文件，找到 </p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">custom_js: <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>引入js</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">- &#x2F;&#x2F;js文件链接 #烟花效果<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>在 themes-主题名-layout-layout.ejs 文件 body 标签中加入 </p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;div id&#x3D;&quot;clickCanvas&quot; style&#x3D;&quot; position:fixed;left:0;top:0;z-index:999999999;pointer-events:none;&quot;&gt;&lt;&#x2F;div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+
+
+<h1 id="首页添加音乐"><a href="#首页添加音乐" class="headerlink" title="首页添加音乐"></a>首页添加音乐</h1><p>下载：<a target="_blank" rel="noopener" href="https://cdnjs.com/libraries/aplayer">https://cdnjs.com/libraries/aplayer</a></p>
+<p>新建dist文件夹，把下载下来的文件全放进去</p>
+<p>在dist目录里，新建 music.js 文件，并把如下代码粘贴进去。</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">const ap &#x3D; new APlayer(&#123;
+    container: document.getElementById(&#39;aplayer&#39;),
+    fixed: true,
+    autoplay: true,
+    audio: [
+      &#123;
+        name: &quot;歌曲名&quot;,
+        artist: &quot;歌手&quot;,
+        url: &#39;音频链接&#39;,
+        cover: &#39;图片链接&#39;,
+      &#125;
+    ]
+&#125;);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>全放到source文件夹里</p>
+<p>在themes-主题名-layout-layout.ejs文件中，body 标签里新增如下代码</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;!-- 音频播放 --&gt;
+&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;&#x2F;dist&#x2F;APlayer.min.css&quot;&gt;
+&lt;div id&#x3D;&quot;aplayer&quot;&gt;&lt;&#x2F;div&gt;
+&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;dist&#x2F;APlayer.min.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;dist&#x2F;music.js&quot;&gt;&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>链接自己对上</p>
+<h1 id="背景添加动态线条效果"><a href="#背景添加动态线条效果" class="headerlink" title="背景添加动态线条效果"></a>背景添加动态线条效果</h1><p>js下载：<a target="_blank" rel="noopener" href="https://wwa.lanzous.com/iz677oyhosh">https://wwa.lanzous.com/iz677oyhosh</a></p>
+<p>在 themes-主题名-layout-layout.ejs 文件中添加如下代码：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;!--动态线条背景--&gt;
+&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;
+color&#x3D;&quot;145,128,114&quot; opacity&#x3D;&#39;0.7&#39; zIndex&#x3D;&quot;-2&quot; count&#x3D;&quot;200&quot; src&#x3D;&quot;js文件链接&quot;&gt;
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>其中：<br>color：表示线条颜色，三个数字分别为(R,G,B)，默认：（0,0,0）<br>opacity：表示线条透明度（0~1），默认：0.5 - count：表示线条的总数量，默认：150<br>zIndex：表示背景的z-index属性，css属性用于控制所在层的位置，默认：-1</p>
+<h1 id="添加console-log字符画"><a href="#添加console-log字符画" class="headerlink" title="添加console.log字符画"></a>添加console.log字符画</h1><p>把以下代码放到 themes-主题名-layout-layout.ejs 文件 body 下面</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;!-- console.log --&gt;
+&lt;script&gt;
+    if (window.console) &#123;
+        console.log(&quot;你要显示的文字&quot;);
+        console.log(&quot;你要显示的文字&quot;);
+    &#125;
+&lt;&#x2F;script&gt;
+&lt;script&gt;
+    function makeMulti (string) &#123;
+        let l &#x3D; new String(string)
+        l &#x3D; l.substring(l.indexOf(&quot;&#x2F;*&quot;) + 3, l.lastIndexOf(&quot;*&#x2F;&quot;))
+        return l
+    &#125;
+    let string &#x3D; function () &#123;
+      &#x2F;* 你要显示的字符画放到这（替换这些文字） *&#x2F;
+    &#125;
+    console.log(makeMulti(string));
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>字符画可以用Ascgen2转换，软件自行百度</p>
+<h1 id="修改博客字体"><a href="#修改博客字体" class="headerlink" title="修改博客字体"></a>修改博客字体</h1><p>选择自己喜欢的字体打开<a target="_blank" rel="noopener" href="https://www.fontke.com/tool/fontface/">这个</a>网站进行转换</p>
+<p>打开source文件夹，新建一个font文件夹</p>
+<p>转换出来的东西都放进去</p>
+<p>打开转换生成的css文件，url改为字体文件链接</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">@charset &quot;UTF-8&quot;;
+
+@font-face &#123;
+  font-family: &quot;Muyao-Softbrush&quot;;
+  src: url(&quot;&#x2F;font&#x2F;xxxxx.woff2&quot;) format(&quot;woff2&quot;),
+       url(&quot;&#x2F;font&#x2F;xxxxx.woff&quot;) format(&quot;woff&quot;),
+       url(&quot;&#x2F;font&#x2F;xxxxx.ttf&quot;) format(&quot;truetype&quot;),
+       url(&quot;&#x2F;font&#x2F;xxxxx.eot&quot;) format(&quot;embedded-opentype&quot;),
+       url(&quot;&#x2F;font&#x2F;xxxxx.svg&quot;) format(&quot;svg&quot;);
+  font-weight: normal;
+  font-style: normal;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>打开 themes-主题名-config.yml 文件，找到</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">custom_css: <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>引入css</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">- &#x2F;&#x2F;xxxxx.css的链接<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>或者说也可以在 themes-主题名-source-css-main.styl 中输入</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">@import &quot;xxxxx.css的链接&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<br>
+
+<p>打开主题配置文件config.yml，找到</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">font_family:<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>改成你的字体</p>
+<p>如果主题配置文件中找不到<code>font_family:</code>可以把 themes-主题名-source-css-variables.style 文件中font-family 修改成你的字体就可以了(没有试过，理论上可行)</p>
+<h1 id="Live2D"><a href="#Live2D" class="headerlink" title="Live2D"></a>Live2D</h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1QW411w7Da">这个</a>教程很好，自己去试试吧</p>
+<p>仓库地址：<a target="_blank" rel="noopener" href="https://github.com/galnetwen/Live2D">https://github.com/galnetwen/Live2D</a></p>
+<h1 id="设置鼠标指针"><a href="#设置鼠标指针" class="headerlink" title="设置鼠标指针"></a>设置鼠标指针</h1><p>先把css下载下来</p>
+<p><a target="_blank" rel="noopener" href="https://wwa.lanzous.com/i1Mc7oyhorg">https://wwa.lanzous.com/i1Mc7oyhorg</a></p>
+<p>打开css文件，括号里的链接换成你想换的鼠标指针的链接</p>
+<p>由于网页不同，有一些地方可能没有换成光标指针</p>
+<p>底下照着加就好</p>
+<p>保存好以后引入css</p>
+<h1 id="Fluid设置背景图片"><a href="#Fluid设置背景图片" class="headerlink" title="Fluid设置背景图片"></a>Fluid设置背景图片</h1><p>首先我们得把主题中首屏图片关掉，不然直接设置背景不好看</p>
+<p>打开themes-fluid-_config.yml</p>
+<p>首屏图片的链接删掉，然后把透明度改成0</p>
+<p>这样首屏我们就看不到了</p>
+<p>然后打开 themes-fluid-layout-layout.ejs ，最上面输入</p>
+<div class="code-wrapper"><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+<span class="token selector">body</span> <span class="token punctuation">&#123;</span>
+	<span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>你的背景图片链接<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
+	<span class="token property">background-attachment</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span> //让内容滚动的时候背景图片不动
+    <span class="token property">background-size</span><span class="token punctuation">:</span>cover<span class="token punctuation">;</span> //背景图片铺满整个页面 图片比例保持不变
+<span class="token punctuation">&#125;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>然后往下拉，找到</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;%- partial(&#39;_partial&#x2F;nav&#39;) %&gt;
+  &lt;div class&#x3D;&quot;banner&quot; id&#x3D;&quot;banner&quot; &lt;%- theme.banner &amp;&amp; theme.banner.parallax &amp;&amp; &#39;parallax&#x3D;true&#39; %&gt;
+       style&#x3D;&quot;background: url(&#39;&lt;%- url_for(banner_img) %&gt;&#39;) no-repeat center center;
+         background-size: cover;&quot;&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>url里面的给删掉</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">background: url (&#39;&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>因为主题配置文件里的banner链接我们已经删掉了，所以这个我们也给删掉，不然控制台里会有报错</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">GET http:&#x2F;&#x2F;xxxxx&#x2F;null 404 (Not Found)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>这样就好了</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>查看一下效果吧</p>
+<h1 id="Valine-添加博主标签及操作系统、浏览器图标"><a href="#Valine-添加博主标签及操作系统、浏览器图标" class="headerlink" title="Valine 添加博主标签及操作系统、浏览器图标"></a>Valine 添加博主标签及操作系统、浏览器图标</h1><p><a target="_blank" rel="noopener" href="https://blog.hclonely.com/posts/409d3090/">https://blog.hclonely.com/posts/409d3090/</a></p>
+<p>fluid主题使用方法</p>
+<p>替换成魔改版的valine链接，我已经给整理好了，直接用我的链接就好</p>
+<p>打开主题的_config.yml文件，翻到最下面，找到valine，改成这样</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">valine: https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lxh20061128&#x2F;image&#x2F;project&#x2F;valine&#x2F;dist<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>然后打开themes-fluid-layout-_partial-comments-valine.ejs</p>
+<div class="code-wrapper"><pre><code>    new Valine(&#123;
+      el: &quot;#vcomments&quot;,
+      app_id: &quot;&lt;%= theme.valine.appid %&gt;&quot;,
+      app_key: &quot;&lt;%= theme.valine.appkey %&gt;&quot;,
+      placeholder: &quot;&lt;%= theme.valine.placeholder %&gt;&quot;,
+      path: &lt;%= theme.valine.path %&gt;,
+      avatar: &quot;&lt;%= theme.valine.avatar %&gt;&quot;,
+      meta: &lt;%- JSON.stringify(theme.valine.meta || []) %&gt;,
+      pageSize: &quot;&lt;%= theme.valine.pageSize %&gt;&quot;,
+      lang: &quot;&lt;%= theme.valine.lang %&gt;&quot;,
+      highlight: &lt;%= theme.valine.highlight %&gt;,
+      recordIP: &lt;%= theme.valine.recordIP %&gt;,
+      serverURLs: &quot;&lt;%= theme.valine.serverURLs %&gt;&quot;,
+      在这里添加
+    &#125;);
+</code></pre></div>
+<p>添加这三行</p>
+<div class="code-wrapper"><pre><code>tagMeta: [&quot;博主&quot;,&quot;小伙伴&quot;,&quot;访客&quot;],     //标识字段名
+master: &quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;,   //博主邮箱Md5
+friends: [&quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;,&quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;],  //小伙伴邮箱Md5
+</code></pre></div>
+<p>邮箱的Md5可以用<a target="_blank" rel="noopener" href="https://md5jiami.bmcx.com/">这个</a>链接转换</p>
+<p>不显示图标是因为不支持fontawesomeV5，主题配置文件里引入css就好了</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">- &#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;@fortawesome&#x2F;fontawesome-free&#x2F;css&#x2F;all.min.css<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+
+
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>本文会持续更新~</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%8E%9F%E5%88%9B/">原创</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/hexo/">hexo</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/GitHubjsDelivr.html">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">GitHub+jsDelivr文件加速</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/browser.html">
+                        <span class="hidden-mobile">浏览器测试</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/gh/lxh20061128/image/project/valine/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "mx98yO28F3UXFHNfT0V9DtA5-gzGzoHsz",
+          app_key: "XiXV5kKHMKvFa6OAOSuJazbA",
+          placeholder: "昵称框输入QQ号可以自动获取QQ昵称、邮箱和头像哦~",
+          path: window.location.pathname,
+          avatar: "",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: true,
+          recordIP: true,
+          serverURLs: "",
+		  tagMeta: ["博主","小伙伴","访客"],     //标识字段名
+		  master: "2871653cc0b99294eeaaf638f39a579c",   //博主邮箱Md5
+          friends: ["e1af8eb40462cf4a876e00ca3bc1796e","e584776e126027fe6cade81056dab77e","d895381032303921db7f80230bfa877b"],  //朋友邮箱Md5
+		  enableQQ: true
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+<style>
+.v[data-class=v] .veditor {
+    background-image: url(https://cdn.jsdelivr.net/gh/lxh20061128/image/img/valine.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+</style>
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-loveme"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <font face="宋体">|</font> <a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20210321" target="_blank"> 20210321号</a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+    
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.2/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="//cdn.jsdelivr.net/gh/lxh20061128/image/project/bg.js"></script>
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

@@ -1,0 +1,1249 @@
+
+
+<!DOCTYPE html>
+
+<html lang="zh-CN" >
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/LOGO/avatar.webp">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/LOGO/avatar.webp">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#1f3144">
+  <meta name="description" content="本文转自:https://blog.csdn.net/sinat_37781304/article/details/82729029">
+  <meta name="author" content="E=mc²">
+  <meta name="keywords" content="">
+  
+  <title>hexo史上最全搭建教程 - E=mc²</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      
+        
+          
+          
+          
+        
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.min.css" />
+      
+      
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.css" />
+      
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2437176_jvyfsc48i5d.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxh20061128/image/project/font/Muyao-Softbrush.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxh20061128/image/project/shubiao/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxh20061128/image/project/gundongtiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxh20061128/image/project/bg.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"hexo.lxh2006.tk","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>E=mc²的博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-posts"></i>
+                文章
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/">
+                    <i class="iconfont icon-archives"></i>
+                    归档
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/">
+                    <i class="iconfont icon-categories"></i>
+                    分类
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/">
+                    <i class="iconfont icon-tags"></i>
+                    标签
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-me"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-links"></i>
+                友链
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/love/">
+                <i class="iconfont icon-loveme"></i>
+                表白
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://travellings.now.sh">
+                <i class="iconfont icon-subway"></i>
+                开往
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="hexo史上最全搭建教程">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      E=mc²
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-02-15 22:30" pubdate>
+        2021年2月15日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      8k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      94
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">hexo史上最全搭建教程</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2021年5月4日 晚上
+                
+              </p>
+            
+            <div class="markdown-body">
+              <p>本文转自:<a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029">https://blog.csdn.net/sinat_37781304/article/details/82729029</a></p>
+<span id="more"></span>
+
+<h1 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h1><p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo官网</a>进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
+<h1 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h1><p>hexo的初级搭建还有部署到github page上，以及个人域名的绑定。</p>
+<h2 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h2><ol>
+<li>安装Git</li>
+<li>安装Node.js</li>
+<li>安装Hexo</li>
+<li>GitHub创建个人仓库</li>
+<li>生成SSH添加到GitHub</li>
+<li>将hexo部署到GitHub</li>
+<li>设置个人域名</li>
+<li>发布文章</li>
+</ol>
+<h3 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1. 安装Git"></a>1. 安装Git</h3><p>Git是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。Git非常强大，我觉得建议每个人都去了解一下。</p>
+<p>windows：到git官网上下载,<a target="_blank" rel="noopener" href="https://gitforwindows.org/">Download git</a>,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git。</p>
+<p>linux：对linux来说实在是太简单了，因为最早的git就是在linux上编写的，只需要一行代码</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>安装好后，用<code>git --version</code> 来查看一下版本</p>
+<h3 id="2-安装nodejs"><a href="#2-安装nodejs" class="headerlink" title="2. 安装nodejs"></a>2. 安装nodejs</h3><p>Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具。</p>
+<p>windows<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">nodejs</a>选择LTS版本就行了。</p>
+<p>linux：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install nodejs
+sudo apt-get install npm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p>安装完后，打开命令行</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">node -v
+npm -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p>检查一下有没有安装成功</p>
+<p>顺便说一下，windows在git安装完后，就可以直接使用git bash来敲命令行了，不用自带的cmd，cmd有点难用。</p>
+<h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3. 安装hexo"></a>3. 安装hexo</h3><p>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后<code>cd</code>到这个文件夹下（或者在这个文件夹下直接右键git bash打开）。</p>
+<p>输入命令</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>依旧用<code>hexo -v</code>查看一下版本</p>
+<p>至此就全部安装完了。</p>
+<p>接下来初始化一下hexo</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo init myblog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>这个myblog可以自己取什么名字都行，然后</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">cd myblog &#x2F;&#x2F;进入这个myblog文件夹
+npm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p>新建完成后，指定文件夹目录下有：</p>
+<ul>
+<li>node_modules: 依赖包</li>
+<li>public：存放生成的页面</li>
+<li>scaffolds：生成文章的一些模板</li>
+<li>source：用来存放你的文章</li>
+<li>themes：主题</li>
+<li>_config.yml: 博客的配置文件</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo g
+hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p>打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。</p>
+<p>使用ctrl+c可以把服务关掉。</p>
+<h3 id="4-GitHub创建个人仓库"><a href="#4-GitHub创建个人仓库" class="headerlink" title="4. GitHub创建个人仓库"></a>4. GitHub创建个人仓库</h3><p>首先，你先要有一个GitHub账户，去注册一个吧。</p>
+<p>注册完登录后，在GitHub.com中看到一个New repository，新建仓库 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstcm7ej20ei0c1aah.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt=""></p>
+<p>创建一个和你用户名相同的仓库，<a target="_blank" rel="noopener" href="http://后面加.github.io/">后面加.github.io</a>，只有这样，将来要部署到GitHub page的时候，才会被识别，<a target="_blank" rel="noopener" href="http://也就是xxxx.github.io/">也就是xxxx.github.io</a>，其中xxx就是你注册GitHub的用户名。我这里是已经建过了。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstusrdj20iw0o4myp.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>点击create repository。</p>
+<h3 id="5-生成SSH添加到GitHub"><a href="#5-生成SSH添加到GitHub" class="headerlink" title="5. 生成SSH添加到GitHub"></a>5. 生成SSH添加到GitHub</h3><p>回到你的git bash中，</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git config --global user.name &quot;yourname&quot;
+git config --global user.email &quot;youremail&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
+<p>可以用以下两条，检查一下你有没有输对</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git config user.name
+git config user.email<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p>然后创建SSH,一路回车</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t rsa -C &quot;youremail&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstd106j20kb073gll.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>ssh，简单来讲，就是一个秘钥，其中，<code>id_rsa</code>是你这台电脑的私人秘钥，不能给别人看的，<code>id_rsa.pub</code>是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
+<p>而后在GitHub的setting中，找到SSH keys的设置选项，点击<code>New SSH key</code> 把你的<code>id_rsa.pub</code>里面的信息复制进去。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstdifaj210s0gfjrz.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>在gitbash中，查看是否成功</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">ssh -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="6-将hexo部署到GitHub"><a href="#6-将hexo部署到GitHub" class="headerlink" title="6. 将hexo部署到GitHub"></a>6. 将hexo部署到GitHub</h3><p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 <code>_config.yml</code>，翻到最后，修改为 YourgithubName就是你的GitHub账户</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">deploy:
+  type: git
+  repo: https:&#x2F;&#x2F;github.com&#x2F;YourgithubName&#x2F;YourgithubName.github.io.git
+  branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">npm install hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>然后</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo clean
+hexo generate
+hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<p>其中 <code>hexo clean</code>清除了你之前生成的东西，也可以不加。</p>
+<p><code>hexo generate</code> 顾名思义，生成静态文章，可以用 <code>hexo g</code>缩写 </p>
+<p><code>hexo deploy</code> 部署文章，可以用<code>hexo d</code>缩写</p>
+<p>注意deploy时可能要你输入username和password。</p>
+<p>得到下图就说明部署成功了，过一会儿就可以在<code>http://yourname.github.io</code> 这个网站看到你的博客了！！ <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstbtvfj20lq01u3yd.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt=""></p>
+<h3 id="7-设置个人域名"><a href="#7-设置个人域名" class="headerlink" title="7. 设置个人域名"></a>7. 设置个人域名</h3><p>现在你的个人网站的地址是 <code>yourname.github.io</code>，如果觉得这个网址逼格不太够，这就需要你设置个人域名了。但是需要花钱。</p>
+<p>注册一个阿里云账户,在<a target="_blank" rel="noopener" href="https://wanwang.aliyun.com/?spm=5176.8142029.digitalization.2.e9396d3e46JCc5">阿里云</a>上买一个域名，我买的是 <code>fangzh.top</code>，各个后缀的价格不太一样，比如最广泛的.com就比较贵，看个人喜好咯。</p>
+<p>你需要先去进行实名认证,然后在域名控制台中，看到你购买的域名。</p>
+<p>点<strong>解析</strong>进去，添加解析。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstcu8xj20d607wdfw.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>其中，192.30.252.153 和 192.30.252.154 是GitHub的服务器地址。 <strong>注意，解析线路选择默认</strong>，不要像我一样选境外。这个境外是后面来做国内外分流用的,在后面的博客中会讲到。记得现在选择<strong>默认</strong>！！</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstf8unj20ob05b0sq.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>登录GitHub，进入之前创建的仓库，点击settings，设置Custom domain，输入你的域名<code>fangzh.top</code></p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstghklj20as04mt8n.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>然后在你的博客文件source中创建一个名为CNAME文件，不要后缀。写上你的域名。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstgsyrj208806aq2z.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>最后，在gitbash中，输入</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo clean
+hexo g
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<p>过不了多久，再打开你的浏览器，输入你自己的域名，就可以看到搭建的网站啦！</p>
+<p>接下来你就可以正式开始写文章了。</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new newpapername<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>然后在source/_post中打开markdown文件，就可以开始编辑了。当你写完的时候，再</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo clean
+hexo g
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<p>就可以看到更新了。</p>
+<h1 id="第二部分"><a href="#第二部分" class="headerlink" title="第二部分"></a>第二部分</h1><p>hexo的基本配置，更换主题，实现多终端工作，以及在coding page部署实现国内外分流。</p>
+<h2 id="1-hexo基本配置"><a href="#1-hexo基本配置" class="headerlink" title="1. hexo基本配置"></a>1. hexo基本配置</h2><p>在文件根目录下的<code>_config.yml</code>，就是整个hexo框架的配置文件了。可以在里面修改大部分的配置。详细可参考<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration">官方的配置</a>描述。</p>
+<h4 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h4><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>title</code></td>
+<td>网站标题</td>
+</tr>
+<tr>
+<td><code>subtitle</code></td>
+<td>网站副标题</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>网站描述</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>您的名字</td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td>网站使用的语言</td>
+</tr>
+<tr>
+<td><code>timezone</code></td>
+<td>网站时区。Hexo 默认使用您电脑的时区。<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">时区列表</a>。比如说：<code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。</td>
+</tr>
+</tbody></table>
+<p>其中，<code>description</code>主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。<code>author</code>参数用于主题显示文章的作者。</p>
+<h4 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h4><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>url</code></td>
+<td>网址</td>
+</tr>
+<tr>
+<td><code>root</code></td>
+<td>网站根目录</td>
+</tr>
+<tr>
+<td><code>permalink</code></td>
+<td>文章的 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/permalinks">永久链接</a> 格式</td>
+</tr>
+<tr>
+<td><code>permalink_defaults</code></td>
+<td>永久链接中各部分的默认值</td>
+</tr>
+</tbody></table>
+<p>在这里，你需要把<code>url</code>改成你的网站域名。</p>
+<p>permalink，也就是你生成某个文章时的那个链接格式。</p>
+<p>比如我新建一个文章叫<code>temp.md</code>，那么这个时候他自动生成的地址就是<code>http://yoursite.com/2018/09/05/temp</code>。</p>
+<p>以下是官方给出的示例，关于链接的变量还有很多，需要的可以去官网上查找 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/permalinks">永久链接</a> 。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>:year/:month/:day/:title/</code></td>
+<td>2013/07/14/hello-world</td>
+</tr>
+<tr>
+<td><code>:year-:month-:day-:title.html</code></td>
+<td>2013-07-14-hello-world.html</td>
+</tr>
+<tr>
+<td><code>:category/:title</code></td>
+<td>foo/bar/hello-world</td>
+</tr>
+</tbody></table>
+<p>再往下翻，中间这些都默认就好了。</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">theme: landscape
+
+# Deployment
+## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html
+deploy:
+  type: git
+  repo: &lt;repository url&gt;
+  branch: [branch]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p><code>theme</code>就是选择什么主题，也就是在<code>theme</code>这个文件夹下，在官网上有很多个主题，默认给你安装的是<code>lanscape</code>这个主题。当你需要更换主题时，在官网上下载，把主题的文件放在<code>theme</code>文件夹下，再修改这个参数就可以了。</p>
+<p>接下来这个<code>deploy</code>就是网站的部署的，<code>repo</code>就是仓库(<code>Repository</code>)的简写。<code>branch</code>选择仓库的哪个分支。这个在之前进行github page部署的时候已经修改过了，不再赘述。而这个在后面进行双平台部署的时候会再次用到。</p>
+<h4 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h4><p>Front-matter 是文件最上方以 <code>---</code> 分隔的区域，用于指定个别文件的变量，举例来说：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">title: Hello World
+date: 2013&#x2F;7&#x2F;13 20:46:25
+---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<p>下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>layout</code></td>
+<td>布局</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>标题</td>
+</tr>
+<tr>
+<td><code>date</code></td>
+<td>建立日期</td>
+</tr>
+<tr>
+<td><code>updated</code></td>
+<td>更新日期</td>
+</tr>
+<tr>
+<td><code>comments</code></td>
+<td>开启文章的评论功能</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>标签（不适用于分页）</td>
+</tr>
+<tr>
+<td><code>categories</code></td>
+<td>分类（不适用于分页）</td>
+</tr>
+<tr>
+<td><code>permalink</code></td>
+<td>覆盖文章网址</td>
+</tr>
+</tbody></table>
+<p>其中，分类和标签需要区别一下，分类具有顺序性和层次性，也就是说 <code>Foo, Bar</code> 不等于 <code>Bar, Foo</code>；而标签没有顺序和层次。</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">categories:
+- Diary
+tags:
+- PS3
+- Games
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h4 id="layout（布局）"><a href="#layout（布局）" class="headerlink" title="layout（布局）"></a>layout（布局）</h4><p>当你每一次使用代码</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new paper<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>它其实默认使用的是<code>post</code>这个布局，也就是在<code>source</code>文件夹下的<code>_post</code>里面。</p>
+<p>Hexo 有三种默认布局：<code>post</code>、<code>page</code> 和 <code>draft</code>，它们分别对应不同的路径，而您自定义的其他布局和 <code>post</code> 相同，都将储存到 <code>source/_posts</code> 文件夹。</p>
+<table>
+<thead>
+<tr>
+<th>布局</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>post</code></td>
+<td><code>source/_posts</code></td>
+</tr>
+<tr>
+<td><code>page</code></td>
+<td><code>source</code></td>
+</tr>
+<tr>
+<td><code>draft</code></td>
+<td><code>source/_drafts</code></td>
+</tr>
+</tbody></table>
+<p>而new这个命令其实是：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new [layout] &lt;title&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>只不过这个layout默认是post罢了。</p>
+<h5 id="page"><a href="#page" class="headerlink" title="page"></a>page</h5><p>如果你想另起一页，那么可以使用</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new page board<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>系统会自动给你在source文件夹下创建一个board文件夹，<a target="_blank" rel="noopener" href="http://以及board文件夹中的index.md/">以及board文件夹中的index.md</a>，这样你访问的board对应的链接就是<code>http://xxx.xxx/board</code></p>
+<h5 id="draft"><a href="#draft" class="headerlink" title="draft"></a>draft</h5><p>draft是草稿的意思，也就是你如果想写文章，又不希望被看到，那么可以</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new draft newpage<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>这样会在source/_draft中新建一个newpage.md文件，如果你的草稿文件写的过程中，想要预览一下，那么可以使用</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo server --draft<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>在本地端口中开启服务预览。</p>
+<p>如果你的草稿文件写完了，想要发表到post中，</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo publish draft newpage<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>就会自动把newpage.md发送到post中。</p>
+<h2 id="2-更换主题"><a href="#2-更换主题" class="headerlink" title="2. 更换主题"></a>2. 更换主题</h2><p>到这一步，如果你觉得默认的<code>landscape</code>主题不好看，那么可以在官网的主题中，选择你喜欢的一个主题进行修改就可以啦。<a target="_blank" rel="noopener" href="https://hexo.io/themes/">点这里</a></p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkswpjhtj21fu0rhtp6.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>这里有200多个主题可以选。不过最受欢迎的就是那么几个，比如，<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">NexT主题</a>非常的简洁好看，大多数人都选择这个，关于这个的教程也比较多。不过我选择的是<a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-hueman">hueman</a>这个主题，好像是从WordPress移植过来的，展示效果如下：</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrksxvknrj21fc0q8tsl.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>不管怎么样，至少是符合我个人的审美。</p>
+<p>直接在github链接上下载下来，然后放到<code>theme</code>文件夹下就行了，然后再在刚才说的配置文件中把<code>theme</code>换成那个主题文件夹的名字，它就会自动在<code>theme</code>文件夹中搜索你配置的主题。</p>
+<p>而后进入<code>hueman</code>这个文件夹，可以看到里面也有一个配置文件<code>_config.xml</code>，貌似它默认是<code>_config.xml.example</code>，把它复制一份，重命名为<code>_config.xml</code>就可以了。这个配置文件是修改你整个主题的配置文件。</p>
+<h3 id="menu（菜单栏）"><a href="#menu（菜单栏）" class="headerlink" title="menu（菜单栏）"></a>menu（菜单栏）</h3><p>也就是上面菜单栏上的这些东西。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstfwjbj20jd0233ye.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>其中，About这个你是找不到网页的，因为你的文章中没有about这个东西。如果你想要的话，可以执行命令</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new page about<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>它就会在根目录下<code>source</code>文件夹中新建了一个<code>about</code>文件夹，<a target="_blank" rel="noopener" href="http://以及index.md/">以及index.md</a>，在index.md中写上你想要写的东西，就可以在网站上展示出来了。</p>
+<p>如果你想要自己再自定义一个菜单栏的选项，那么就</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new page yourdiy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>然后在主题配置文件的menu菜单栏添加一个 <code>Yourdiy : /yourdiy</code>，注意冒号后面要有空格，以及前面的空格要和menu中默认的保持整齐。然后在<code>languages</code>文件夹中，找到<code>zh-CN.yml</code>，在index中添加<code>yourdiy: &#39;中文意思&#39;</code>就可以显示中文了。</p>
+<h3 id="customize-定制"><a href="#customize-定制" class="headerlink" title="customize(定制)"></a>customize(定制)</h3><p>在这里可以修改你的个人logo，默认是那个hueman，在<code>source/css/images</code>文件夹中放入自己要的logo，再改一下<code>url</code>的链接名字就可以了。</p>
+<p><code>favicon</code>是网站中出现的那个小图标的icon，找一张你喜欢的logo，然后转换成ico格式，放在images文件夹下，配置一下路径就行。</p>
+<p><code>social_links</code> ，可以显示你的社交链接，而且是有logo的。</p>
+<p><strong>tips:</strong></p>
+<p>在这里可以添加一个rss功能，也就是那个符号像wifi一样的东西。</p>
+<h3 id="添加RSS"><a href="#添加RSS" class="headerlink" title="添加RSS"></a>添加RSS</h3><p><strong>1. 什么是RSS？</strong></p>
+<p>RSS也就是订阅功能，你可以理解为类似与订阅公众号的功能，来订阅各种博客，杂志等等。</p>
+<p><strong>2. 为什么要用RSS？</strong></p>
+<p>就如同订阅公众号一样，你对某个公众号感兴趣，你总不可能一直时不时搜索这个公众号来看它的文章吧。博客也是一样，如果你喜欢某个博主，或者某个平台的内容，你可以通过RSS订阅它们，然后在RSS阅读器上可以实时推送这些消息。现在网上的垃圾消息太多了，如果你每一天都在看这些消息中度过，漫无目的的浏览，只会让你的时间一点一点的流逝，太不值得了。如果你关注的博主每次都发的消息都是精华，而且不是每一天十几条几十条的轰炸你，那么这个博主就值得你的关注，你就可以通过RSS订阅他。</p>
+<p>在我的理解中，如果你不想每天都被那些没有质量的消息轰炸，只想安安静静的关注几个博主，每天看一些有质量的内容也不用太多，那么RSS订阅值得你的拥有。</p>
+<p><strong>3. 添加RSS功能</strong></p>
+<p>先安装RSS插件</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">npm i hexo-generator-feed<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>而后在你整个项目的<code>_config.yml</code>中找到Extensions，添加：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none"># Extensions
+## Plugins: https:&#x2F;&#x2F;hexo.io&#x2F;plugins&#x2F;
+#RSS订阅
+plugin:
+- hexo-generator-feed
+#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>这个时候你的RSS链接就是 域名<code>/atom.xml</code>了。</p>
+<p>所以，在主题配置文件中的这个<code>social links</code>，开启RSS的页面功能，这样你网站上就有那个像wifi一样符号的RSS logo了，注意空格。</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">rss: &#x2F;atom.xml<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><strong>4. 如何关注RSS？</strong></p>
+<p>首先，你需要一个RSS阅读器，在这里我推荐<code>inoreader</code>，宇宙第一RSS阅读器，而且中文支持的挺好。不过它没有PC端的程序，只有网页版，chrome上有插件。在官网上用google账号或者自己注册账号登录，就可以开始你的关注之旅了。</p>
+<p>每次需要关注某个博主时，就点开他的RSS链接，把链接复制到<code>inoreader</code>上，就能关注了，当然，如果是比较大众化的很厉害的博主，你直接搜名字也可以的，比如每个人都非常佩服的阮一峰大师，直接在阅读器上搜索<code>阮一峰</code>，应该就能出来了。</p>
+<p>我关注的比如，阮一峰的网络日志，月光博客，知乎精选等，都很不错。当然，还有我！！赶快关注我吧！你值得拥有：<a target="_blank" rel="noopener" href="http://fangzh.top/atom.xml">http://fangzh.top/atom.xml</a></p>
+<p>在安卓端，inoreader也有下载，不过因为国内google是登录不了的，你需要在inoreader官网上把你的密码修改了，然后就可以用账户名和密码登录了。</p>
+<p>在IOS端，没用过，好像是reader 3可以支持inoreader账户，还有个readon也不错，可以去试试。</p>
+<h3 id="widgets-侧边栏"><a href="#widgets-侧边栏" class="headerlink" title="widgets(侧边栏)"></a>widgets(侧边栏)</h3><p>侧边栏的小标签，如果你想自己增加一个，比如我增加了一个联系方式，那么我把<code>communication</code>写在上面，在<code>zh-CN.yml</code>中的<code>sidebar</code>，添加<code>communication: &#39;中文&#39;</code>。</p>
+<p>然后在<code>hueman/layout/widget</code>中添加一个<code>communicaiton.ejs</code>，填入模板：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;% if (site.posts.length) &#123; %&gt;
+    &lt;div class&#x3D;&quot;widget-wrap widget-list&quot;&gt;
+        &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;&lt;%&#x3D; __(&#39;sidebar.communiation&#39;) %&gt;&lt;&#x2F;h3&gt;
+        &lt;div class&#x3D;&quot;widget&quot;&gt;
+            &lt;!--这里添加你要写的内容--&gt;
+        &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+&lt;% &#125; %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="search-搜索框"><a href="#search-搜索框" class="headerlink" title="search(搜索框)"></a>search(搜索框)</h3><p>默认搜索框是不能够用的，</p>
+<blockquote>
+<p>  you need to install <code>hexo-generator-json-content</code> before using Insight Search </p>
+</blockquote>
+<p>它已经告诉你了，如果想要使用，就安装这个插件。</p>
+<h3 id="comment-评论系统"><a href="#comment-评论系统" class="headerlink" title="comment(评论系统)"></a>comment(评论系统)</h3><p>这里的多数都是国外的，基本用不了。这个<code>valine</code>好像不错，还能统计文章阅读量，可以自己试一试，<a target="_blank" rel="noopener" href="https://valine.js.org/quickstart.html#npm">链接</a>。</p>
+<h3 id="miscellaneous-其他"><a href="#miscellaneous-其他" class="headerlink" title="miscellaneous(其他)"></a>miscellaneous(其他)</h3><p>这里我就改了一个<code>links</code>，可以添加友链。注意空格要对！不然会报错！</p>
+<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><p>整个主题看起来好像很复杂的样子，但是仔细捋一捋其实也比较流畅，</p>
+<ul>
+<li>languages: 顾名思义- layout：布局文件，其实后期想要修改自定义网站上的东西，添加各种各样的信息，主要是在这里修改，其中<code>comment</code>是评论系统，<code>common</code>是常规的布局，最常修改的在这里面，比如修改页面<code>head</code>和<code>footer</code>的内容。- scripts：js脚本，暂时没什么用- source：里面放了一些css的样式，以及图片</li>
+</ul>
+<h2 id="3-git分支进行多终端工作"><a href="#3-git分支进行多终端工作" class="headerlink" title="3. git分支进行多终端工作"></a>3. git分支进行多终端工作</h2><p>问题来了，如果你现在在自己的笔记本上写的博客，部署在了网站上，那么你在家里用台式机，或者实验室的台式机，发现你电脑里面没有博客的文件，或者要换电脑了，最后不知道怎么移动文件，怎么办？</p>
+<p>在这里我们就可以利用git的分支系统进行多终端工作了，这样每次打开不一样的电脑，只需要进行简单的配置和在github上把文件同步下来，就可以无缝操作了。</p>
+<h3 id="机制"><a href="#机制" class="headerlink" title="机制"></a>机制</h3><p>机制是这样的，由于<code>hexo d</code>上传部署到github的其实是hexo编译后的文件，是用来生成网页的，不包含源文件。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstj43xj20800d7glz.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="可以看到，并没有source等源文件在内">
+
+<p>也就是上传的是在本地目录里自动生成的<code>.deploy_git</code>里面。</p>
+<p>其他文件 ，包括我们写在source 里面的，和配置文件，主题文件，都没有上传到github</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrksthbryj20eb07swej.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>所以可以利用git的分支管理，将源文件上传到github的另一个分支即可。</p>
+<h3 id="上传分支"><a href="#上传分支" class="headerlink" title="上传分支"></a>上传分支</h3><p>首先，先在github上新建一个hexo分支，如图：</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstkyz7j20cp0bgdg5.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>然后在这个仓库的settings中，选择默认分支为hexo分支（这样每次同步的时候就不用指定分支，比较方便）。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstl8uxj20ql0dsgmo.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>然后在本地的任意目录下，打开git bash，</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git clone git@github.com:ZJUFangzh&#x2F;ZJUFangzh.github.io.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p>
+<p>接下来在克隆到本地的<code>ZJUFangzh.github.io</code>中，把除了.git 文件夹外的所有文件都删掉</p>
+<p>把之前我们写的博客源文件全部复制过来，除了<code>.deploy_git</code>。这里应该说一句，复制过来的源文件应该有一个<code>.gitignore</code>，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules&#x2F;
+public&#x2F;
+.deploy*&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>注意，如果你之前克隆过theme中的主题文件，那么应该把主题文件中的<code>.git</code>文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>
+<p>而后</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git add .
+git commit –m &quot;add branch&quot;
+git push <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<p>这样就上传完了，可以去你的github上看一看hexo分支有没有上传上去，其中<code>node_modules</code>、<code>public</code>、<code>db.json</code>已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstk4k1j20yq0h9gmr.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>这样就上传完了。</p>
+<h3 id="更换电脑操作"><a href="#更换电脑操作" class="headerlink" title="更换电脑操作"></a>更换电脑操作</h3><p>一样的，跟之前的环境搭建一样，</p>
+<ul>
+<li>安装git</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<ul>
+<li>设置git全局邮箱和用户名</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git config --global user.name &quot;yourgithubname&quot;
+git config --global user.email &quot;yourgithubemail&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<ul>
+<li>设置ssh key</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t rsa -C &quot;youremail&quot;
+#生成后填到github和coding上（有coding平台的话）
+#验证是否成功
+ssh -T git@github.com
+ssh -T git@git.coding.net #(有coding平台的话)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<ul>
+<li>安装nodejs</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install nodejs
+sudo apt-get install npm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<ul>
+<li>安装hexo</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">sudo npm install hexo-cli -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>但是已经不需要初始化了，</p>
+<p>直接在任意文件夹下，</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git clone git@………………<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>然后进入克隆到的文件夹：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">cd xxx.github.io
+npm install
+npm install hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<p>生成，部署：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo g
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p>然后就可以开始写你的新博客了</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new newpage<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><strong>Tips:</strong></p>
+<ol>
+<li>不要忘了，每次写完最好都把源文件上传一下</li>
+</ol>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git add .
+git commit –m &quot;xxxx&quot;
+git push <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<ol>
+<li>如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了</li>
+</ol>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git pull<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h2 id="4-coding-page上部署实现国内外分流"><a href="#4-coding-page上部署实现国内外分流" class="headerlink" title="4. coding page上部署实现国内外分流"></a>4. coding page上部署实现国内外分流</h2><blockquote>
+<p>PS：现在coding pages只能免费试用180天，过后0.06元一个月</p>
+<p>开启方法：先建一个项目，左下角项目设置-功能开关，把持续部署打开，退回去，左边持续部署-网站托管，创建你的网站吧</p>
+<p>（转者注）</p>
+</blockquote>
+<p>之前我们已经把hexo托管在github了，但是github是国外的，而且百度的爬虫是不能够爬取github的，所以如果你希望你做的博客能够在百度引擎上被收录，而且想要更快的访问，那么可以在国内的coding page做一个托管，这样在国内访问就是coding page，国外就走github page。</p>
+<p><strong>1. 申请coding账户，新建项目</strong></p>
+<p>先申请一个账户，然后创建新的项目，这一步项目名称应该是随意的。</p>
+<p><strong>2. 添加ssh key</strong></p>
+<p>这一步跟github一样。</p>
+<p>添加后，检查一下是不是添加成功</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">ssh -T git@git.coding.net<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><strong>3. 修改_config.yml</strong></p>
+<p>hexo官方文档是这样的：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">deploy:
+  type: git
+  message: [message]
+  repo:
+    github: &lt;repository url&gt;,[branch]
+    coding: &lt;repository url&gt;,[branch] <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>那么，我们只需要：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">deploy:
+  type: git
+  repo: 
+    coding: git@git.coding.net:ZJUFangzh&#x2F;ZJUFangzh.git,master
+    github: git@github.com:ZJUFangzh&#x2F;ZJUFangzh.github.io.git,master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p><strong>4. 部署</strong></p>
+<p>保存一下，直接</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo g
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p>这样就可以在coding的项目上看到你部署的文件了。</p>
+<p><strong>5. 开启coding pages服务，绑定域名</strong></p>
+<p>如图：</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstnswnj20xr0bugmj.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p><strong>6. 阿里云添加解析</strong></p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstjxu6j20o709bdg1.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>这个时候就可以把之前github的解析改成境外，把coding的解析设为默认了。</p>
+<p><strong>7. 去除coding page的跳转广告</strong></p>
+<p>coding page的一个比较恶心人的地方就是，你只是银牌会员的话，访问会先跳转到一个广告，再到你自己的域名。那么它也给出了消除的办法。右上角切换到coding的旧版界面，默认新版是不行的。然后再来到<code>pages服务</code>这里。</p>
+<p>这里：</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstmpshj20j80cbmxq.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>只要你在页面上添加一行文字，写<code>Hosted by Coding Pages</code>，然后点下面的小勾勾，两个工作日内它就会审核通过了。</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;p&gt;Hosted by &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;pages.coding.me&quot; style&#x3D;&quot;font-weight: bold&quot;&gt;Coding Pages&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>我的选择是把这一行代码放在主题文件夹<code>/layout/common/footer.ejs</code>里面，也就是本来在页面中看到的页脚部分。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstk1skj20lh0630su.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>当然，为了统一，我又在后面加上了and <strong>Github</strong>哈哈，可以不加。</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;p&gt;&lt;span&gt;Hosted by &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;pages.coding.me&quot; style&#x3D;&quot;font-weight: bold&quot;&gt;Coding Pages&lt;&#x2F;a&gt;&lt;&#x2F;span&gt; and &lt;span&gt;&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;github.com&quot; style&#x3D;&quot;font-weight: bold&quot;&gt;Github&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>这是最终加上去的代码。</p>
+<h1 id="第三部分"><a href="#第三部分" class="headerlink" title="第三部分"></a>第三部分</h1><p>hexo添加各种功能，包括搜索的SEO，阅读量统计，访问量统计和评论系统等。</p>
+<p>本文参考了: <a target="_blank" rel="noopener" href="http://visugar.com/2017/08/01/20170801HexoPlugins/">visugar.com</a>这里面说的很详细了。</p>
+<h2 id="1-SEO优化"><a href="#1-SEO优化" class="headerlink" title="1. SEO优化"></a>1. SEO优化</h2><p>推广是很麻烦的事情，怎么样别人才能知道我们呢，首先需要让搜索引擎收录你的这个网站，别人才能搜索的到。那么这就需要SEO优化了。</p>
+<blockquote>
+<p>  SEO是由英文Search Engine Optimization缩写而来， 中文意译为“搜索引擎优化”。SEO是指通过站内优化比如网站结构调整、网站内容建设、网站代码优化等以及站外优化。 </p>
+</blockquote>
+<h4 id="百度seo"><a href="#百度seo" class="headerlink" title="百度seo"></a>百度seo</h4><p>刚建站的时候是没有搜索引擎收录我们的网站的。可以在搜索引擎中输入<code>site:&lt;域名&gt;</code></p>
+<p>来查看一下。</p>
+<p><strong>1. 登录百度站长平台添加网站</strong></p>
+<p>登录<a target="_blank" rel="noopener" href="https://ziyuan.baidu.com/linksubmit/index">百度站长平台</a>，在站点管理中添加你自己的网站。</p>
+<p>验证网站有三种方式：文件验证、HTML标签验证、CNAME验证。</p>
+<p>第三种方式最简单，只要将它提供给你的那个xxxxx使用CNAME解析到xxx.baidu.com就可以了。也就是登录你的阿里云，把这个解析填进去就OK了。</p>
+<p><strong>2. 提交链接</strong></p>
+<p>我们需要使用npm自动生成网站的sitemap，然后将生成的sitemap提交到百度和其他搜索引擎</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-sitemap --save     
+npm install hexo-generator-baidu-sitemap --save<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p>这时候你需要在你的根目录下<code>_config.xml</code>中看看url有没有改成你自己的：</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstpzd9j20ar03b749.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>重新部署后，就可以在public文件夹下看到生成的sitemap.xml和baidusitemap.xml了。</p>
+<p>然后就可以向百度提交你的站点地图了。</p>
+<p>这里建议使用自动提交。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstwp4pj20fc0kyq4n.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>自动提交又分为三种：主动推送、自动推送、sitemap。</p>
+<p>可以三个一起提交不要紧，我选择的是后两种。</p>
+<ul>
+<li>自动推送：把百度生成的自动推送代码，放在主题文件<code>/layout/common/head.ejs</code>的适当位置，然后验证一下就可以了。- sitemap：把两个sitemap地址，提交上去，看到状态正常就OK了。<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrksu9fa6j20v60m4404.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt=""></li>
+</ul>
+<p><strong>ps:</strong> 百度收录比较慢，慢慢等个十天半个月再去site:&lt;域名&gt;看看有没有被收录。</p>
+<h4 id="google的SEO"><a href="#google的SEO" class="headerlink" title="google的SEO"></a>google的SEO</h4><p>流程一样，google更简单，而且收录更快，进入<a target="_blank" rel="noopener" href="https://search.google.com/search-console/sitemaps?resource_id=http://fangzh.top/&hl=zh-CN">google站点地图</a>，提交网站和sitemap.xml，就可以了。</p>
+<p>如果你这个域名在google这里出了问题，那你就提交<a target="_blank" rel="noopener" href="http://yourname.github.io/">yourname.github.io</a> ，这个链接，效果是一样的。</p>
+<p>不出意外的话一天内google就能收录你的网站了。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkswrucmj20q30lkq72.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>其他的搜索，如搜狗搜索，360搜索，流程是一样的，这里就不再赘述。</p>
+<h2 id="2-评论系统"><a href="#2-评论系统" class="headerlink" title="2. 评论系统"></a>2. 评论系统</h2><p>评论系统有很多，但是很多都是墙外的用不了，之前说过这个valine好像集成在hueman和next主题里面了，但是我还没有研究过，我看的是<a target="_blank" rel="noopener" href="http://visugar.com/2017/08/01/20170801HexoPlugins/">visugar</a>这个博主用的来比力评论系统，感觉也还不错。</p>
+<p><a target="_blank" rel="noopener" href="https://livere.com/">来比力官网</a>，注册好后，点击管理页面，在<code>代码管理</code>中找到安装代码：</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrksu93vyj20tk0m440w.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>获取安装代码后，在主题的comment下新建一个文件放入刚刚那段代码，再找到article文件，找到如下代码，若没有则直接在footer后面添加即可。livebe即为刚刚所创文件名称。</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;%- partial(&#39;comment&#x2F;livebe&#39;) %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>然后可以自己设置一些东西：</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrksufavtj20v70o9mzw.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>还可以设置评论提醒，这样别人评论你的时候就可以及时知道了。</p>
+<h2 id="3-添加百度统计"><a href="#3-添加百度统计" class="headerlink" title="3. 添加百度统计"></a>3. 添加百度统计</h2><p>百度统计可以在后台上看到你网站的访问数，浏览量，浏览链接分布等很重要的信息。所以添加百度统计能更有效的让你掌握你的网站情况。</p>
+<p><a target="_blank" rel="noopener" href="https://tongji.baidu.com/">百度统计</a>，注册一下，这里的账号好像和百度账号不是一起的。</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrksvbdmwj20lf0kx78n.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>照样把代码复制到<code>head.ejs</code>文件中，然后再进行一下安装检查，半小时左右就可以在百度统计里面看到自己的网站信息了。</p>
+<h2 id="4-文章阅读量统计leanCloud"><a href="#4-文章阅读量统计leanCloud" class="headerlink" title="4. 文章阅读量统计leanCloud"></a>4. 文章阅读量统计leanCloud</h2><p><a target="_blank" rel="noopener" href="https://leancloud.cn/">leanCloud</a>，进去后注册一下，进入后创建一个应用：</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstp8rdj20h30cimxt.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>在<code>存储</code>中创建Class，命名为Counter,</p>
+<img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstygbpj20gq0k0abm.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload alt="">
+
+<p>然后在设置页面看到你的<code>应用Key</code>，在主题的配置文件中：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">leancloud_visitors:
+  enable: true
+  app_id: 你的id
+  app_key: 你的key
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>在<code>article.ejs</code>中适当的位置添加如下，这要看你让文章的阅读量统计显示在哪个地方了，</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">阅读数量:&lt;span id&#x3D;&quot;&lt;%&#x3D; url_for(post.path) %&gt;&quot; class&#x3D;&quot;leancloud_visitors&quot; data-flag-title&#x3D;&quot;&lt;%- post.title %&gt;&quot;&gt;&lt;&#x2F;span&gt;次
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>然后在<code>footer.ejs</code>的最后，添加：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;script src&#x3D;&quot;&#x2F;&#x2F;cdn1.lncld.net&#x2F;static&#x2F;js&#x2F;2.5.0&#x2F;av-min.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script&gt;
+    var APP_ID &#x3D; &#39;你的app id&#39;;
+    var APP_KEY &#x3D; &#39;你的app key&#39;;
+    AV.init(&#123;
+        appId: APP_ID,
+        appKey: APP_KEY
+    &#125;);
+    &#x2F;&#x2F; 显示次数
+    function showTime(Counter) &#123;
+        var query &#x3D; new AV.Query(&quot;Counter&quot;);
+        if($(&quot;.leancloud_visitors&quot;).length &gt; 0)&#123;
+            var url &#x3D; $(&quot;.leancloud_visitors&quot;).attr(&#39;id&#39;).trim();
+            &#x2F;&#x2F; where field
+            query.equalTo(&quot;words&quot;, url);
+            &#x2F;&#x2F; count
+            query.count().then(function (number) &#123;
+                &#x2F;&#x2F; There are number instances of MyClass where words equals url.
+                $(document.getElementById(url)).text(number?  number : &#39;--&#39;);
+            &#125;, function (error) &#123;
+                &#x2F;&#x2F; error is an instance of AVError.
+            &#125;);
+        &#125;
+    &#125;
+    &#x2F;&#x2F; 追加pv
+    function addCount(Counter) &#123;
+        var url &#x3D; $(&quot;.leancloud_visitors&quot;).length &gt; 0 ? $(&quot;.leancloud_visitors&quot;).attr(&#39;id&#39;).trim() : &#39;icafebolger.com&#39;;
+        var Counter &#x3D; AV.Object.extend(&quot;Counter&quot;);
+        var query &#x3D; new Counter;
+        query.save(&#123;
+            words: url
+        &#125;).then(function (object) &#123;
+        &#125;)
+    &#125;
+    $(function () &#123;
+        var Counter &#x3D; AV.Object.extend(&quot;Counter&quot;);
+        addCount(Counter);
+        showTime(Counter);
+    &#125;);
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>重新部署后就可以了。</p>
+<h2 id="5-引入不蒜子访问量和访问人次统计"><a href="#5-引入不蒜子访问量和访问人次统计" class="headerlink" title="5. 引入不蒜子访问量和访问人次统计"></a>5. 引入不蒜子访问量和访问人次统计</h2><p>不蒜子的添加非常非常方便，<a target="_blank" rel="noopener" href="http://busuanzi.ibruce.info/">不蒜子</a></p>
+<p>在<code>footer.ejs</code>中的合适位置，看你要显示在哪个地方，添加：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;!--这一段是不蒜子的访问量统计代码--&gt;
+&lt;script async src&#x3D;&quot;&#x2F;&#x2F;dn-lbstatics.qbox.me&#x2F;busuanzi&#x2F;2.3&#x2F;busuanzi.pure.mini.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;span id&#x3D;&quot;busuanzi_container_site_pv&quot;&gt;本站总访问量&lt;span id&#x3D;&quot;busuanzi_value_site_pv&quot;&gt;&lt;&#x2F;span&gt;次 &amp;nbsp;   &lt;&#x2F;span&gt;
+&lt;span id&#x3D;&quot;busuanzi_container_site_uv&quot;&gt;访客数&lt;span id&#x3D;&quot;busuanzi_value_site_uv&quot;&gt;&lt;&#x2F;span&gt;人次&lt;&#x2F;span&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>就可以了。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>到这里就基本做完了。其实都是参考别的博主的设置的，不一定仅限于hueman主题，其他主题的设置也是大体相同的，所以如果你希望设置别的主题，那么仔细看一下这个主题的代码结构，也能够把上边的功能添加进去。</p>
+<p>多看看别的博主的那些功能，如果有你能找到自己喜欢的功能，那么好好发动搜索技能，很快就能找到怎么做了。加油吧！</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/hexo/">hexo</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/browser.html">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">浏览器测试</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/gh/lxh20061128/image/project/valine/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "mx98yO28F3UXFHNfT0V9DtA5-gzGzoHsz",
+          app_key: "XiXV5kKHMKvFa6OAOSuJazbA",
+          placeholder: "昵称框输入QQ号可以自动获取QQ昵称、邮箱和头像哦~",
+          path: window.location.pathname,
+          avatar: "",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: true,
+          recordIP: true,
+          serverURLs: "",
+		  tagMeta: ["博主","小伙伴","访客"],     //标识字段名
+		  master: "2871653cc0b99294eeaaf638f39a579c",   //博主邮箱Md5
+          friends: ["e1af8eb40462cf4a876e00ca3bc1796e","e584776e126027fe6cade81056dab77e","d895381032303921db7f80230bfa877b"],  //朋友邮箱Md5
+		  enableQQ: true
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+<style>
+.v[data-class=v] .veditor {
+    background-image: url(https://cdn.jsdelivr.net/gh/lxh20061128/image/img/valine.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+</style>
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-loveme"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <font face="宋体">|</font> <a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20210321" target="_blank"> 20210321号</a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+    
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.2/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="//cdn.jsdelivr.net/gh/lxh20061128/image/project/bg.js"></script>
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
