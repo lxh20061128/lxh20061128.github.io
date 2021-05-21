@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>vercel托管解决无法访问</title>
+    <link href="/posts/vercelwffw.html"/>
+    <url>/posts/vercelwffw.html</url>
+    
+    <content type="html"><![CDATA[<p>从上周周末开始就发现网站在国内无法访问了，但令人奇怪的是</p><p><code>lxh2006.tk</code>打不开 但是 <code>hexo.lxh2006.tk</code> 可以正常访问</p><p>原来是因为<code>lxh2006.tk</code>解析到了一个被墙ip，而<code>hexo.lxh2006.tk</code>解析到了一个中国可以访问的cname</p><p><img src="https://z3.ax1x.com/2021/05/21/gbNtMj.png"></p><br><p><strong>解决方法就是给网址加上前缀</strong></p><br><p>我的话<code>lxh2006.tk</code>这个是直接套上cloudflare了，不然没法打开</p><p> <code>hexo.lxh2006.tk</code> 这个可以正常访问就把cloudflare的代理关掉，设置成<code>仅限DNS</code></p><p><img src="https://z3.ax1x.com/2021/05/21/gbUClQ.png"></p><p>因为vercel还是要比cloudflare快一些的</p><p><img src="https://z3.ax1x.com/2021/05/21/gbr12V.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>原创</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>搭建局域网网盘</title>
     <link href="/posts/pan.html"/>
     <url>/posts/pan.html</url>
