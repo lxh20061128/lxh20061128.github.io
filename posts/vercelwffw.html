@@ -258,7 +258,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      143 字
+      341 字
     </span>
   
 
@@ -268,7 +268,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      5
        分钟
     </span>
   
@@ -302,25 +302,46 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年5月21日 晚上
+                  本文最后更新于：2021年5月22日 下午
                 
               </p>
             
             <div class="markdown-body">
-              <p>从上周周末开始就发现网站在国内无法访问了，但令人奇怪的是</p>
-<p><code>lxh2006.tk</code>打不开 但是 <code>hexo.lxh2006.tk</code> 可以正常访问</p>
-<p>原来是因为<code>lxh2006.tk</code>解析到了一个被墙ip，而<code>hexo.lxh2006.tk</code>解析到了一个中国可以访问的cname</p>
+              <p><del>从上周周末开始就发现网站在国内无法访问了，但令人奇怪的是</del></p>
+<p><del><code>lxh2006.tk</code>打不开 但是 <code>hexo.lxh2006.tk</code> 可以正常访问</del></p>
+<p><del>原来是因为<code>lxh2006.tk</code>解析到了一个被墙ip，而<code>hexo.lxh2006.tk</code>解析到了一个中国可以访问的cname</del></p>
 <p><img src="https://z3.ax1x.com/2021/05/21/gbNtMj.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload></p>
-<br>
-
-<p><strong>解决方法就是给网址加上前缀</strong></p>
-<br>
-
-<p>我的话<code>lxh2006.tk</code>这个是直接套上cloudflare了，不然没法打开</p>
-<p> <code>hexo.lxh2006.tk</code> 这个可以正常访问就把cloudflare的代理关掉，设置成<code>仅限DNS</code></p>
+<p><del><br></del></p>
+<p><del><strong>解决方法就是给网址加上前缀</strong></del></p>
+<p><del><br></del></p>
+<p><del>我的话<code>lxh2006.tk</code>这个是直接套上cloudflare了，不然没法打开</del></p>
+<p> <del><code>hexo.lxh2006.tk</code> 这个可以正常访问就把cloudflare的代理关掉，设置成<code>仅限DNS</code></del></p>
 <p><img src="https://z3.ax1x.com/2021/05/21/gbUClQ.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload></p>
-<p>因为vercel还是要比cloudflare快一些的</p>
+<p><del>因为vercel还是要比cloudflare快一些的</del></p>
 <p><img src="https://z3.ax1x.com/2021/05/21/gbr12V.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload></p>
+<br>
+
+<p>今天才看到原来Vercel早在八天前就做出反应了</p>
+<p><a target="_blank" rel="noopener" href="https://www.vercel-status.com/incidents/r758bhbklgfd">Errors Accessing From China</a></p>
+<p><img src="https://z3.ax1x.com/2021/05/22/gqqbQK.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.gif" lazyload></p>
+<blockquote>
+<p>Errors Accessing From China</p>
+<p>Incident Report for <a target="_blank" rel="noopener" href="https://www.vercel-status.com/">Vercel Status</a></p>
+<p>Resolved</p>
+<p>All systems normal.</p>
+<p>Posted 8 days ago. May 14, 2021 - 15:29 UTC</p>
+<p>Monitoring</p>
+<p>We have made changes to ensure the vercel.com and vercel.app domains are accessible once again from China after a block was placed from within the country.</p>
+<p>For those impacted that are using a custom domain on Vercel, the issue can be mitigated by changing your A record value pointing to Vercel from 76.76.21.21 to 76.223.126.88.</p>
+<p>While we have resolved the issue impacting CNAME records, we still recommend changing cname.vercel-dns.com to cname-china.vercel-dns.com for additional redundancy.</p>
+<p>Posted 8 days ago. May 14, 2021 - 13:42 UTC</p>
+<p>Investigating</p>
+<p>We are currently investigating reports of errors when accessing Vercel deployments from China. We will provide further updates when available.</p>
+<p>Posted 8 days ago. May 14, 2021 - 10:42 UTC</p>
+</blockquote>
+<br>
+
+<p>把A记录值更改为76.223.126.88，cname记录更改为cname-china.vercel-dns.com</p>
 
             </div>
             <hr>
