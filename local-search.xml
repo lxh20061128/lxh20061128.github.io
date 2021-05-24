@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>cloudflare自选节点</title>
+    <link href="/posts/cfzxjd.html"/>
+    <url>/posts/cfzxjd.html</url>
+    
+    <content type="html"><![CDATA[<p>需要用到的软件：</p><p><a href="https://github.com/XIU2/CloudflareSpeedTest/releases">CF节点测速工具CloudflareSpeedTest</a></p><p>注意：免费域名用不成</p><h1 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h1><p>名称服务器改成dnspod</p><h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><p>注册cloudflare账号</p><p>找一个Cloudflare Partners，我这里用的<a href="https://cdn.bnxb.com/">笨牛网</a>。</p><p>为啥？因为我只知道这个</p><p>注册笨牛账号，填写你的CF的账号和密码</p><p><img src="https://z3.ax1x.com/2021/05/23/gOT1jU.png"></p><p>点击域名接入-添加域名（免费域名不行的啊，我也是搞到最好才知道）</p><p><img src="https://z3.ax1x.com/2021/05/23/gOTlcT.png"></p><p>选择cname接入，填写你的域名</p><p>添加完成以后点击设置</p><p><img src="https://z3.ax1x.com/2021/05/23/gOqpqS.png"></p><p>往下翻，找到“**以下解析需要到您域名DNS面板进行(任选其一)**”</p><p>dnspod上加上CNAME解析</p><p><img src="https://z3.ax1x.com/2021/05/23/gOTM90.png"></p><p>一般是 ：</p><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">域名.cdn.cloudflare.net<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div><p><img src="https://z3.ax1x.com/2021/05/23/gOTQ3V.png"></p><p>点击主要设置，看到域名是激活了</p><p>以vercel为例：</p><p>在vercel项目中把你的域名添加加上，这不用我说吧</p><p>笨牛网 进入你的域名，点击上面的 解析设置</p><p>把vercel的解析添加上去</p><table><thead><tr><th>@</th><th>A</th><th>76.76.21.21</th></tr></thead></table><h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1><p>找自选IP</p><p>打开前面下载的软件</p><p>打开CloudflareST.exe</p><p>测速完毕后，默认会显示最快的 20 个 IP，示例：</p><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">IP 地址           已发送  已接收  丢包率  平均延迟  下载速度 (MB&#x2F;s)104.27.198.101    4       4       0.00    126.52    12.71104.22.43.157     4       4       0.00    129.38    16.74104.27.214.140    4       4       0.00    132.02    4.65104.22.42.165     4       4       0.00    133.63    12.00104.22.35.177     4       4       0.00    135.75    3.92104.22.87.44      4       4       0.00    136.00    5.86104.22.67.122     4       4       0.00    136.50    9.47104.22.88.154     4       4       0.00    140.75    13.00104.22.69.218     4       4       0.00    142.00    19.07104.27.184.10     4       4       0.00    148.02    21.05<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div><p>选择一个平均延迟与下载速度都不错的 IP</p><h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h1><p>打开dnspod，添加解析</p><table><thead><tr><th>主机</th><th>类型</th><th>线路</th><th align="left">记录值</th><th>MX优先级</th><th>TTL</th></tr></thead><tbody><tr><td>@</td><td>A</td><td>电信</td><td align="left">104.21.97.214</td><td>0</td><td>600</td></tr><tr><td>@</td><td>A</td><td>移动</td><td align="left">104.16.48.236</td><td>0</td><td>600</td></tr><tr><td>@</td><td>A</td><td>联通</td><td align="left">104.16.48.236</td><td>0</td><td>600</td></tr><tr><td>@</td><td>A</td><td>境外</td><td align="left">104.21.53.131</td><td>0</td><td>600</td></tr><tr><td>@</td><td>CNAME</td><td>默认</td><td align="left">lxh2006.tk.cdn.cloudflare.net.</td><td>0</td><td>600</td></tr></tbody></table><p>完成！</p><p>我感觉还是不是很快，以上可以参考一下</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>原创</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>cdn</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>vercel托管解决无法访问</title>
     <link href="/posts/vercelwffw.html"/>
     <url>/posts/vercelwffw.html</url>

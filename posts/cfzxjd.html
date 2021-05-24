@@ -17,13 +17,39 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
   <meta name="theme-color" content="#1f3144">
-  <meta name="description" content="光速对于所有人都是一样的">
+  <meta name="description" content="同是CF，为什么差距这么大！">
   <meta name="author" content="E=mc²">
   <meta name="keywords" content="">
   
-  <title>分类 - E=mc²</title>
+  <title>cloudflare自选节点 - E=mc²</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      
+        
+          
+          
+          
+        
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.min.css" />
+      
+      
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.css" />
+      
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -205,9 +231,51 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="分类">
+            <span class="h2" id="subtitle" title="cloudflare自选节点">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      E=mc²
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-05-22 23:26" pubdate>
+        2021年5月22日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      527 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      7
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -220,182 +288,245 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">cloudflare自选节点</h1>
+            
+              <p class="note note-info">
                 
+                  本文最后更新于：2021年5月24日 晚上
+                
+              </p>
+            
+            <div class="markdown-body">
+              <p>需要用到的软件：</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/XIU2/CloudflareSpeedTest/releases">CF节点测速工具CloudflareSpeedTest</a></p>
+<p>注意：免费域名用不成</p>
+<h1 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h1><p>名称服务器改成dnspod</p>
+<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><p>注册cloudflare账号</p>
+<p>找一个Cloudflare Partners，我这里用的<a target="_blank" rel="noopener" href="https://cdn.bnxb.com/">笨牛网</a>。</p>
+<p>为啥？因为我只知道这个</p>
+<p>注册笨牛账号，填写你的CF的账号和密码</p>
+<p><img src="https://z3.ax1x.com/2021/05/23/gOT1jU.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload></p>
+<p>点击域名接入-添加域名（免费域名不行的啊，我也是搞到最好才知道）</p>
+<p><img src="https://z3.ax1x.com/2021/05/23/gOTlcT.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload></p>
+<p>选择cname接入，填写你的域名</p>
+<p>添加完成以后点击设置</p>
+<p><img src="https://z3.ax1x.com/2021/05/23/gOqpqS.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload></p>
+<p>往下翻，找到“**以下解析需要到您域名DNS面板进行(任选其一)**”</p>
+<p>dnspod上加上CNAME解析</p>
+<p><img src="https://z3.ax1x.com/2021/05/23/gOTM90.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload></p>
+<p>一般是 ：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">域名.cdn.cloudflare.net<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
 
+<p><img src="https://z3.ax1x.com/2021/05/23/gOTQ3V.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload></p>
+<p>点击主要设置，看到域名是激活了</p>
+<p>以vercel为例：</p>
+<p>在vercel项目中把你的域名添加加上，这不用我说吧</p>
+<p>笨牛网 进入你的域名，点击上面的 解析设置</p>
+<p>把vercel的解析添加上去</p>
+<table>
+<thead>
+<tr>
+<th>@</th>
+<th>A</th>
+<th>76.76.21.21</th>
+</tr>
+</thead>
+</table>
+<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1><p>找自选IP</p>
+<p>打开前面下载的软件</p>
+<p>打开CloudflareST.exe</p>
+<p>测速完毕后，默认会显示最快的 20 个 IP，示例：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">IP 地址           已发送  已接收  丢包率  平均延迟  下载速度 (MB&#x2F;s)
+104.27.198.101    4       4       0.00    126.52    12.71
+104.22.43.157     4       4       0.00    129.38    16.74
+104.27.214.140    4       4       0.00    132.02    4.65
+104.22.42.165     4       4       0.00    133.63    12.00
+104.22.35.177     4       4       0.00    135.75    3.92
+104.22.87.44      4       4       0.00    136.00    5.86
+104.22.67.122     4       4       0.00    136.50    9.47
+104.22.88.154     4       4       0.00    140.75    13.00
+104.22.69.218     4       4       0.00    142.00    19.07
+104.27.184.10     4       4       0.00    148.02    21.05<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
 
+<p>选择一个平均延迟与下载速度都不错的 IP</p>
+<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h1><p>打开dnspod，添加解析</p>
+<table>
+<thead>
+<tr>
+<th>主机</th>
+<th>类型</th>
+<th>线路</th>
+<th align="left">记录值</th>
+<th>MX优先级</th>
+<th>TTL</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@</td>
+<td>A</td>
+<td>电信</td>
+<td align="left">104.21.97.214</td>
+<td>0</td>
+<td>600</td>
+</tr>
+<tr>
+<td>@</td>
+<td>A</td>
+<td>移动</td>
+<td align="left">104.16.48.236</td>
+<td>0</td>
+<td>600</td>
+</tr>
+<tr>
+<td>@</td>
+<td>A</td>
+<td>联通</td>
+<td align="left">104.16.48.236</td>
+<td>0</td>
+<td>600</td>
+</tr>
+<tr>
+<td>@</td>
+<td>A</td>
+<td>境外</td>
+<td align="left">104.21.53.131</td>
+<td>0</td>
+<td>600</td>
+</tr>
+<tr>
+<td>@</td>
+<td>CNAME</td>
+<td>默认</td>
+<td align="left">lxh2006.tk.cdn.cloudflare.net.</td>
+<td>0</td>
+<td>600</td>
+</tr>
+</tbody></table>
+<p>完成！</p>
+<p>我感觉还是不是很快，以上可以参考一下</p>
 
-
-
-
-
-<div class="category-list">
-  
-  
-  
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-3f00cc1b30fac67956e183199df02efc" role="tab" data-toggle="collapse" href="#collapse-3f00cc1b30fac67956e183199df02efc"
-        aria-expanded="false"
-      >
-        原创
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E5%8E%9F%E5%88%9B/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>10</span>
-      </a>
-      <div class="category-collapse">
-        
-        
-          
-  <div id="collapse-3f00cc1b30fac67956e183199df02efc" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-3f00cc1b30fac67956e183199df02efc">
-    
-    
-      
-      
-        <a href="/posts/cfzxjd.html" class="list-group-item list-group-item-action">
-          <span class="category-post">cloudflare自选节点</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/vercelwffw.html" class="list-group-item list-group-item-action">
-          <span class="category-post">vercel托管解决无法访问</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/pan.html" class="list-group-item list-group-item-action">
-          <span class="category-post">搭建局域网网盘</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/cyswzxzy.html" class="list-group-item list-group-item-action">
-          <span class="category-post">超越生物中心主义-思维导图</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/sjdjsw.html" class="list-group-item list-group-item-action">
-          <span class="category-post">世界顶级思维-思维导图</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/GitHubwffw.html" class="list-group-item list-group-item-action">
-          <span class="category-post">GitHub解决无法访问</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/hexoxr.html" class="list-group-item list-group-item-action">
-          <span class="category-post">hexo指定不进行渲染的文件</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/GitHubjsDelivr.html" class="list-group-item list-group-item-action">
-          <span class="category-post">GitHub+jsDelivr文件加速</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/hexomhjc.html" class="list-group-item list-group-item-action">
-          <span class="category-post">hexo美化教程</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/browser.html" class="list-group-item list-group-item-action">
-          <span class="category-post">浏览器测试</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-aa6eb67fe55f3fb03caa5e07ee4af3d4" role="tab" data-toggle="collapse" href="#collapse-aa6eb67fe55f3fb03caa5e07ee4af3d4"
-        aria-expanded="false"
-      >
-        转载
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E8%BD%AC%E8%BD%BD/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>3</span>
-      </a>
-      <div class="category-collapse">
-        
-        
-          
-  <div id="collapse-aa6eb67fe55f3fb03caa5e07ee4af3d4" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-aa6eb67fe55f3fb03caa5e07ee4af3d4">
-    
-    
-      
-      
-        <a href="/posts/threebody.html" class="list-group-item list-group-item-action">
-          <span class="category-post">《三体》</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/UnicodeUTF-8.html" class="list-group-item list-group-item-action">
-          <span class="category-post">Unicode和UTF-8有何区别</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/hexojc.html" class="list-group-item list-group-item-action">
-          <span class="category-post">hexo史上最全搭建教程</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-</div>
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%8E%9F%E5%88%9B/">原创</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/cdn/">cdn</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/vercelwffw.html">
+                        <span class="hidden-mobile">vercel托管解决无法访问</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/gh/lxh20061128/image/project/valine/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#valine",
+          app_id: "mx98yO28F3UXFHNfT0V9DtA5-gzGzoHsz",
+          app_key: "XiXV5kKHMKvFa6OAOSuJazbA",
+          placeholder: "昵称框输入QQ号可以自动获取QQ昵称、邮箱和头像哦~",
+          path: window.location.pathname,
+          avatar: "",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: true,
+          recordIP: true,
+          serverURLs: "",
+		  tagMeta: ["博主","小伙伴","访客"],     //标识字段名
+		  master: "2871653cc0b99294eeaaf638f39a579c",   //博主邮箱Md5
+          friends: ["e1af8eb40462cf4a876e00ca3bc1796e","e584776e126027fe6cade81056dab77e","d895381032303921db7f80230bfa877b"],  //朋友邮箱Md5
+		  enableQQ: true
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+<style>
+.v[data-class=v] .veditor {
+    background-image: url(https://cdn.jsdelivr.net/gh/lxh20061128/image/img/valine.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+</style>
+              </article>
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -501,7 +632,11 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.2/dist/tocbot.min.js" ></script>
 
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
 
 
 
