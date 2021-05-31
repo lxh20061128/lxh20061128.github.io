@@ -8,8 +8,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/LOGO/avatar.webp">
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/LOGO/avatar.webp">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/LOGO/avatar.svg">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/LOGO/avatar.svg">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -77,7 +77,7 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"lxh2006.tk","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+    var CONFIG = {"hostname":"lxh2006.tk","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg","onlypost":true,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -225,7 +225,7 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
+    <div class="banner" id="banner" false
          style="background: url('') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
@@ -469,7 +469,7 @@
 
             
               <!-- Comments -->
-              <article class="comments" id="comments" lazyload>
+              <article class="comments" id="comments">
                 
                   
                 
@@ -493,7 +493,7 @@
           serverURLs: "",
 		  tagMeta: ["博主","小伙伴","访客"],     //标识字段名
 		  master: "2871653cc0b99294eeaaf638f39a579c",   //博主邮箱Md5
-          friends: ["e1af8eb40462cf4a876e00ca3bc1796e","e584776e126027fe6cade81056dab77e","d895381032303921db7f80230bfa877b"],  //朋友邮箱Md5
+          friends: ["e1af8eb40462cf4a876e00ca3bc1796e","e584776e126027fe6cade81056dab77e","d895381032303921db7f80230bfa877b"],  //小伙伴邮箱Md5
 		  enableQQ: true
         });
       });
@@ -625,7 +625,9 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    
+      <script  src="/js/img-lazyload.js" ></script>
+    
   
 
 
