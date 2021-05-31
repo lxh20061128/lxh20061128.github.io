@@ -1,7 +1,6 @@
 
 
 <!DOCTYPE html>
-
 <html lang="zh-CN" >
 
 
@@ -77,7 +76,7 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"lxh2006.tk","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg","onlypost":true,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+    var CONFIG = {"hostname":"lxh2006.tk","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg","onlypost":true,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -258,7 +257,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.6k 字
+      1.7k 字
     </span>
   
 
@@ -268,7 +267,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      23
+      25
        分钟
     </span>
   
@@ -302,7 +301,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年5月9日 下午
+                  本文最后更新于：2021年5月31日 晚上
                 
               </p>
             
@@ -477,8 +476,24 @@ friends: [&quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;,&quot;xxxxxxxxxxxxxxxxxxx
 <p>不显示图标是因为不支持fontawesomeV5，主题配置文件里引入css就好了</p>
 <div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">- &#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;@fortawesome&#x2F;fontawesome-free&#x2F;css&#x2F;all.min.css<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
 
+<p>续：</p>
+<p>主题1.8.11修改了valine</p>
+<p>1.8.11以前的版本可以用以上方法</p>
+<p>新版的话方法还是一样的</p>
+<p>只是第二步有点区别</p>
+<p>还是打开themes-fluid-layout-_partial-comments-valine.ejs</p>
+<p>第七行的位置</p>
+<p>原来是这样子的</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;%- JSON.stringify(theme.valine || &#123;&#125;) %&gt;,<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
 
+<p>添加在后面就好</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&#123;tagMeta: [&quot;博主&quot;,&quot;小伙伴&quot;,&quot;访客&quot;],master: &quot;2871653cc0b99294eeaaf638f39a579c&quot;,friends: [&quot;e1af8eb40462cf4a876e00ca3bc1796e&quot;,&quot;e584776e126027fe6cade81056dab77e&quot;,&quot;d895381032303921db7f80230bfa877b&quot;]&#125;,<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
 
+<p>最后这个样子</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;%- JSON.stringify(theme.valine || &#123;&#125;) %&gt;, &#123;tagMeta: [&quot;博主&quot;,&quot;小伙伴&quot;,&quot;访客&quot;],master: &quot;2871653cc0b99294eeaaf638f39a579c&quot;,friends: [&quot;e1af8eb40462cf4a876e00ca3bc1796e&quot;,&quot;e584776e126027fe6cade81056dab77e&quot;,&quot;d895381032303921db7f80230bfa877b&quot;]&#125;,
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>完成！</p>
 <h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>本文会持续更新~</p>
 
             </div>
@@ -545,25 +560,15 @@ friends: [&quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;,&quot;xxxxxxxxxxxxxxxxxxx
   <div id="valine"></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://cdn.jsdelivr.net/gh/lxh20061128/image/project/valine/dist/Valine.min.js', function () {
-        new Valine({
-          el: "#valine",
-          app_id: "mx98yO28F3UXFHNfT0V9DtA5-gzGzoHsz",
-          app_key: "XiXV5kKHMKvFa6OAOSuJazbA",
-          placeholder: "昵称框输入QQ号可以自动获取QQ昵称、邮箱和头像哦~",
-          path: window.location.pathname,
-          avatar: "",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: true,
-          recordIP: true,
-          serverURLs: "",
-		  tagMeta: ["博主","小伙伴","访客"],     //标识字段名
-		  master: "2871653cc0b99294eeaaf638f39a579c",   //博主邮箱Md5
-          friends: ["e1af8eb40462cf4a876e00ca3bc1796e","e584776e126027fe6cade81056dab77e","d895381032303921db7f80230bfa877b"],  //小伙伴邮箱Md5
-		  enableQQ: true
-        });
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/gh/lxh20061128/image/project/valine/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"mx98yO28F3UXFHNfT0V9DtA5-gzGzoHsz","appKey":"XiXV5kKHMKvFa6OAOSuJazbA","placeholder":"昵称框输入QQ号可以自动获取QQ昵称、邮箱和头像哦~","path":"window.location.pathname","avatar":"","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":true,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"requiredFields":[],"appid":"mx98yO28F3UXFHNfT0V9DtA5-gzGzoHsz","appkey":"XiXV5kKHMKvFa6OAOSuJazbA"}, {tagMeta: ["博主","小伙伴","访客"],master: "2871653cc0b99294eeaaf638f39a579c",friends: ["e1af8eb40462cf4a876e00ca3bc1796e","e584776e126027fe6cade81056dab77e","d895381032303921db7f80230bfa877b"]},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
       });
     });
   </script>
@@ -578,6 +583,7 @@ friends: [&quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;,&quot;xxxxxxxxxxxxxxxxxxx
     background-position: right;
 }
 </style>
+
               </article>
             
           </article>
@@ -720,6 +726,10 @@ friends: [&quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;,&quot;xxxxxxxxxxxxxxxxxxx
 
 
 
+  <script  src="/js/local-search.js" ></script>
+
+
+
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
@@ -734,21 +744,6 @@ friends: [&quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;,&quot;xxxxxxxxxxxxxxxxxxx
       typing(title)
       
     })(window, document);
-  </script>
-
-
-
-  <script  src="/js/local-search.js" ></script>
-  <script>
-    (function () {
-      var path = "/local-search.xml";
-      $('#local-search-input').on('click', function() {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      });
-      $('#modalSearch').on('shown.bs.modal', function() {
-        $('#local-search-input').focus();
-      });
-    })()
   </script>
 
 
