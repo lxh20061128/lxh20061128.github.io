@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>这就是Windows11？</title>
+    <link href="/posts/Windows11.html"/>
+    <url>/posts/Windows11.html</url>
+    
+    <content type="html"><![CDATA[<p>原视频链接：<a href="https://www.bilibili.com/video/BV1kK4y1g7Ge">哔哩哔哩</a></p><div style="position: relative; padding: 30% 45%;">    <iframe style="        position: absolute;         width: 100%;         height: 100%;         left: 0; top: 0;"         src="//player.bilibili.com/player.html?aid=888903734&bvid=BV1kK4y1g7Ge&cid=362179842&page=1"         scrolling="no"         border="0"         frameborder="no"         framespacing="0"         allowfullscreen="true">    </iframe></div>]]></content>
+    
+    
+    <categories>
+      
+      <category>原创</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>视频</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>DevSidecar开启增强模式</title>
     <link href="/posts/DevSidecar.html"/>
     <url>/posts/DevSidecar.html</url>
