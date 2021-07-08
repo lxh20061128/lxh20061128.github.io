@@ -304,7 +304,7 @@ html {
 }
 html,
 body {
-  font-family: Muyao-Softbrush;
+  font-family: HYRuiYunFeiSongW;
 }
 html,
 body,
@@ -937,7 +937,7 @@ img[lazyload] {
 .markdown-body {
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-family: Muyao-Softbrush;
+  font-family: HYRuiYunFeiSongW;
   color: var(--post-text-color);
 }
 .markdown-body h1,
