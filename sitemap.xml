@@ -137,13 +137,6 @@
 
   
   <url>
-    <loc>https://lxh2006.tk/tags/%E8%A7%86%E9%A2%91/</loc>
-    <lastmod>2021-07-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lxh2006.tk/tags/GitHub/</loc>
     <lastmod>2021-07-12</lastmod>
     <changefreq>daily</changefreq>
@@ -158,14 +151,7 @@
   </url>
   
   <url>
-    <loc>https://lxh2006.tk/tags/%E7%BC%96%E7%A0%81/</loc>
-    <lastmod>2021-07-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lxh2006.tk/tags/cdn/</loc>
+    <loc>https://lxh2006.tk/tags/%E8%A7%86%E9%A2%91/</loc>
     <lastmod>2021-07-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -186,14 +172,14 @@
   </url>
   
   <url>
-    <loc>https://lxh2006.tk/tags/hexo/</loc>
+    <loc>https://lxh2006.tk/tags/%E7%BC%96%E7%A0%81/</loc>
     <lastmod>2021-07-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lxh2006.tk/tags/logo/</loc>
+    <loc>https://lxh2006.tk/tags/cdn/</loc>
     <lastmod>2021-07-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -208,6 +194,20 @@
   
   <url>
     <loc>https://lxh2006.tk/tags/%E6%84%8F%E8%AF%86/</loc>
+    <lastmod>2021-07-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lxh2006.tk/tags/hexo/</loc>
+    <lastmod>2021-07-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lxh2006.tk/tags/logo/</loc>
     <lastmod>2021-07-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
