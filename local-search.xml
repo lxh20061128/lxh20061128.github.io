@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>LOGO展示</title>
+    <link href="/posts/logo.html"/>
+    <url>/posts/logo.html</url>
+    
+    <content type="html"><![CDATA[<p>本来是想做一个图像LOGO，可是也想不出来有什么合适的图形能表示公式，就转过来做了文字LOGO，图形以后有了灵感可能会补上</p><div style="position: relative; padding: 30% 45%;">    <iframe style="        position: absolute;         width: 100%;         height: 100%;         left: 0; top: 0;"         src="//player.bilibili.com/player.html?aid=291553602&bvid=BV1bf4y1L7kW&cid=368426780&page=1"         scrolling="no"         border="0"         frameborder="no"         framespacing="0"         allowfullscreen="true">    </iframe></div><p><img src="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/post/logozs.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>原创</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>logo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>DevSidecar开启增强模式</title>
     <link href="/posts/DevSidecar.html"/>
     <url>/posts/DevSidecar.html</url>
