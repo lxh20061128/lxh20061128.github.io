@@ -32,17 +32,7 @@
     
     
       
-      
-        
-          
-          
-          
-        
-        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.min.css" />
-      
-      
-        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.css" />
-      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.1.0/styles/vs.min.css" />
     
   
 
@@ -257,7 +247,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      280 字
+      274 字
     </span>
   
 
@@ -333,7 +323,7 @@
 <p>局域网IP的查看方法：</p>
 <p>Win+r，打开运行，输入cmd</p>
 <p>cmd中输入</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">ipconfig &#x2F;all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight ada"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs ada">ipconfig /<span class="hljs-keyword">all</span><br></code></pre></div></td></tr></table></figure>
 
 <p>这一项就是了</p>
 <p><img src="https://z3.ax1x.com/2021/05/02/geY1ET.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload></p>
@@ -341,11 +331,7 @@
 <p><img src="https://z3.ax1x.com/2021/05/02/geY3UU.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload></p>
 <h1 id="四、修改管理员密码"><a href="#四、修改管理员密码" class="headerlink" title="四、修改管理员密码"></a>四、修改管理员密码</h1><p>用记事本打开这个文件</p>
 <p><img src="https://z3.ax1x.com/2021/05/02/geY85F.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload></p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">#&lt;This is the default kiftd account setting file. &gt;
-#Sat May 01 22:32:42 CST 2021
-admin.auth&#x3D;cudrm
-admin.pwd&#x3D;000000
-authOverall&#x3D;l<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight ini"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs ini"><span class="hljs-comment">#&lt;This is the default kiftd account setting file. &gt;</span><br><span class="hljs-comment">#Sat May 01 22:32:42 CST 2021</span><br><span class="hljs-attr">admin.auth</span>=cudrm<br><span class="hljs-attr">admin.pwd</span>=<span class="hljs-number">000000</span><br><span class="hljs-attr">authOverall</span>=l<br></code></pre></div></td></tr></table></figure>
 
 <p>把<code>admin.pwd=</code>后面的<code>000000</code>改成你的密码，不要有中文，最后保存</p>
 
@@ -550,8 +536,6 @@ authOverall&#x3D;l<span aria-hidden="true" class="line-numbers-rows"><span></spa
 
 
 
-  
-    
   
 
 

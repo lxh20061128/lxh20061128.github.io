@@ -32,17 +32,7 @@
     
     
       
-      
-        
-          
-          
-          
-        
-        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.min.css" />
-      
-      
-        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.css" />
-      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.1.0/styles/vs.min.css" />
     
   
 
@@ -257,7 +247,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      143 字
+      134 字
     </span>
   
 
@@ -309,7 +299,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年5月6日 晚上
+                  本文最后更新于：2021年7月14日 晚上
                 
               </p>
             
@@ -318,30 +308,21 @@
 <p>一、打开hexo站点的配置文件 _config.yml</p>
 <p>搜索 skip_render:</p>
 <p>找到在这里</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none"># Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads&#x2F;code
-i18n_dir: :lang
-skip_render:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight avrasm"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs avrasm"><span class="hljs-meta"># Directory</span><br><span class="hljs-symbol">source_dir:</span> source<br><span class="hljs-symbol">public_dir:</span> public<br><span class="hljs-symbol">tag_dir:</span> tags<br><span class="hljs-symbol">archive_dir:</span> archives<br><span class="hljs-symbol">category_dir:</span> categories<br><span class="hljs-symbol">code_dir:</span> downloads/code<br><span class="hljs-symbol">i18n_dir:</span> :lang<br><span class="hljs-symbol">skip_render:</span><br></code></pre></div></td></tr></table></figure>
 
 <p>跳过某个目录下的所有文件的渲染</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">- &quot;XXX&#x2F;*&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight haml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs haml">-<span class="ruby"> <span class="hljs-string">&quot;XXX/*&quot;</span></span><br></code></pre></div></td></tr></table></figure>
 
 <p>跳过某一目录下的所有文件和子目录的渲染</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">- &quot;XXX&#x2F;**&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight haml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs haml">-<span class="ruby"> <span class="hljs-string">&quot;XXX/**&quot;</span></span><br></code></pre></div></td></tr></table></figure>
 
 <p>比如说我设置的就是：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">skip_render:
-  - &quot;baidu_verify_code-W2ATw4HLU6.html&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+<figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">skip<span class="hljs-emphasis">_render:</span><br><span class="hljs-emphasis">  - &quot;baidu<span class="hljs-strong">____</span><span class="hljs-strong">____</span><span class="hljs-strong">____</span>.html&quot;</span><br></code></pre></div></td></tr></table></figure>
 
 
 
 <p>最后一点需要注意的是修改了文件以后，一定要执行</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo clean<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight ebnf"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br></code></pre></div></td></tr></table></figure>
 
 <p>不然不会生效</p>
 
@@ -546,8 +527,6 @@ skip_render:<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
 
 
 
-  
-    
   
 
 

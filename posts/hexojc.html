@@ -32,17 +32,7 @@
     
     
       
-      
-        
-          
-          
-          
-        
-        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.min.css" />
-      
-      
-        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.css" />
-      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.1.0/styles/vs.min.css" />
     
   
 
@@ -257,7 +247,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      8k 字
+      7.9k 字
     </span>
   
 
@@ -267,7 +257,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      94
+      92
        分钟
     </span>
   
@@ -332,33 +322,30 @@
 <h3 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1. 安装Git"></a>1. 安装Git</h3><p>Git是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。Git非常强大，我觉得建议每个人都去了解一下。</p>
 <p>windows：到git官网上下载,<a target="_blank" rel="noopener" href="https://gitforwindows.org/">Download git</a>,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git。</p>
 <p>linux：对linux来说实在是太简单了，因为最早的git就是在linux上编写的，只需要一行代码</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight routeros"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs routeros">sudo apt-<span class="hljs-builtin-name">get</span> install git<br></code></pre></div></td></tr></table></figure>
 
 <p>安装好后，用<code>git --version</code> 来查看一下版本</p>
 <h3 id="2-安装nodejs"><a href="#2-安装nodejs" class="headerlink" title="2. 安装nodejs"></a>2. 安装nodejs</h3><p>Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具。</p>
 <p>windows<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">nodejs</a>选择LTS版本就行了。</p>
 <p>linux：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install nodejs
-sudo apt-get install npm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+<figure class="highlight routeros"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs routeros">sudo apt-<span class="hljs-builtin-name">get</span> install nodejs<br>sudo apt-<span class="hljs-builtin-name">get</span> install npm<br></code></pre></div></td></tr></table></figure>
 
 <p>安装完后，打开命令行</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">node -v
-npm -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+<figure class="highlight crmsh"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">-v</span><br>npm -v<br></code></pre></div></td></tr></table></figure>
 
 <p>检查一下有没有安装成功</p>
 <p>顺便说一下，windows在git安装完后，就可以直接使用git bash来敲命令行了，不用自带的cmd，cmd有点难用。</p>
 <h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3. 安装hexo"></a>3. 安装hexo</h3><p>前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后<code>cd</code>到这个文件夹下（或者在这个文件夹下直接右键git bash打开）。</p>
 <p>输入命令</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight avrasm"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs avrasm">npm install -g hexo-<span class="hljs-keyword">cli</span><br></code></pre></div></td></tr></table></figure>
 
 <p>依旧用<code>hexo -v</code>查看一下版本</p>
 <p>至此就全部安装完了。</p>
 <p>接下来初始化一下hexo</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo init myblog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight csharp"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs csharp">hexo <span class="hljs-keyword">init</span> myblog<br></code></pre></div></td></tr></table></figure>
 
 <p>这个myblog可以自己取什么名字都行，然后</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">cd myblog &#x2F;&#x2F;进入这个myblog文件夹
-npm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+<figure class="highlight awk"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs awk">cd myblog <span class="hljs-regexp">//</span>进入这个myblog文件夹<br>npm install<br></code></pre></div></td></tr></table></figure>
 
 <p>新建完成后，指定文件夹目录下有：</p>
 <ul>
@@ -369,8 +356,7 @@ npm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span
 <li>themes：主题</li>
 <li>_config.yml: 博客的配置文件</li>
 </ul>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo g
-hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+<figure class="highlight axapta"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs axapta">hexo g<br>hexo <span class="hljs-keyword">server</span><br></code></pre></div></td></tr></table></figure>
 
 <p>打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。</p>
 <p>使用ctrl+c可以把服务关掉。</p>
@@ -381,16 +367,14 @@ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span><span
 
 <p>点击create repository。</p>
 <h3 id="5-生成SSH添加到GitHub"><a href="#5-生成SSH添加到GitHub" class="headerlink" title="5. 生成SSH添加到GitHub"></a>5. 生成SSH添加到GitHub</h3><p>回到你的git bash中，</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git config --global user.name &quot;yourname&quot;
-git config --global user.email &quot;youremail&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+<figure class="highlight verilog"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs verilog">git <span class="hljs-keyword">config</span> --<span class="hljs-keyword">global</span> user<span class="hljs-variable">.name</span> <span class="hljs-string">&quot;yourname&quot;</span><br>git <span class="hljs-keyword">config</span> --<span class="hljs-keyword">global</span> user<span class="hljs-variable">.email</span> <span class="hljs-string">&quot;youremail&quot;</span><br></code></pre></div></td></tr></table></figure>
 
 <p>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
 <p>可以用以下两条，检查一下你有没有输对</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git config user.name
-git config user.email<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+<figure class="highlight pgsql"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs pgsql">git config <span class="hljs-keyword">user</span>.name<br>git config <span class="hljs-keyword">user</span>.email<br></code></pre></div></td></tr></table></figure>
 
 <p>然后创建SSH,一路回车</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t rsa -C &quot;youremail&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight excel"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs excel">ssh-keygen -<span class="hljs-built_in">t</span> rsa -C <span class="hljs-string">&quot;youremail&quot;</span><br></code></pre></div></td></tr></table></figure>
 
 <p>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。</p>
 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstd106j20kb073gll.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="">
@@ -400,21 +384,16 @@ git config user.email<span aria-hidden="true" class="line-numbers-rows"><span></
 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstdifaj210s0gfjrz.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="">
 
 <p>在gitbash中，查看是否成功</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">ssh -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight angelscript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs angelscript">ssh -T <span class="hljs-symbol">git@</span>github.com<br></code></pre></div></td></tr></table></figure>
 
 <h3 id="6-将hexo部署到GitHub"><a href="#6-将hexo部署到GitHub" class="headerlink" title="6. 将hexo部署到GitHub"></a>6. 将hexo部署到GitHub</h3><p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 <code>_config.yml</code>，翻到最后，修改为 YourgithubName就是你的GitHub账户</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">deploy:
-  type: git
-  repo: https:&#x2F;&#x2F;github.com&#x2F;YourgithubName&#x2F;YourgithubName.github.io.git
-  branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight dts"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs dts"><span class="hljs-symbol">deploy:</span><br><span class="hljs-symbol">  type:</span> git<br><span class="hljs-symbol">  repo:</span> https:<span class="hljs-comment">//github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="hljs-symbol">  branch:</span> master<br></code></pre></div></td></tr></table></figure>
 
 <p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">npm install hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight ada"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs ada">npm install hexo-deployer-git <span class="hljs-comment">--save</span><br></code></pre></div></td></tr></table></figure>
 
 <p>然后</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo clean
-hexo generate
-hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight verilog"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs verilog">hexo clean<br>hexo <span class="hljs-keyword">generate</span><br>hexo deploy<br></code></pre></div></td></tr></table></figure>
 
 <p>其中 <code>hexo clean</code>清除了你之前生成的东西，也可以不加。</p>
 <p><code>hexo generate</code> 顾名思义，生成静态文章，可以用 <code>hexo g</code>缩写 </p>
@@ -437,18 +416,14 @@ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span><span
 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstgsyrj208806aq2z.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="">
 
 <p>最后，在gitbash中，输入</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo clean
-hexo g
-hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight ebnf"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br><span class="hljs-attribute">hexo g</span><br><span class="hljs-attribute">hexo d</span><br></code></pre></div></td></tr></table></figure>
 
 <p>过不了多久，再打开你的浏览器，输入你自己的域名，就可以看到搭建的网站啦！</p>
 <p>接下来你就可以正式开始写文章了。</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new newpapername<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight actionscript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs actionscript">hexo <span class="hljs-keyword">new</span> newpapername<br></code></pre></div></td></tr></table></figure>
 
 <p>然后在source/_post中打开markdown文件，就可以开始编辑了。当你写完的时候，再</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo clean
-hexo g
-hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight ebnf"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br><span class="hljs-attribute">hexo g</span><br><span class="hljs-attribute">hexo d</span><br></code></pre></div></td></tr></table></figure>
 
 <p>就可以看到更新了。</p>
 <h1 id="第二部分"><a href="#第二部分" class="headerlink" title="第二部分"></a>第二部分</h1><p>hexo的基本配置，更换主题，实现多终端工作，以及在coding page部署实现国内外分流。</p>
@@ -535,21 +510,12 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
 </tr>
 </tbody></table>
 <p>再往下翻，中间这些都默认就好了。</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">theme: landscape
-
-# Deployment
-## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html
-deploy:
-  type: git
-  repo: &lt;repository url&gt;
-  branch: [branch]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight dts"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs dts"><span class="hljs-symbol">theme:</span> landscape<br><br><span class="hljs-meta"># Deployment</span><br><span class="hljs-meta">## Docs: https:<span class="hljs-comment">//hexo.io/docs/deployment.html</span></span><br><span class="hljs-symbol">deploy:</span><br><span class="hljs-symbol">  type:</span> git<br><span class="hljs-symbol">  repo:</span> <span class="hljs-params">&lt;repository url&gt;</span><br><span class="hljs-symbol">  branch:</span> [branch]<br></code></pre></div></td></tr></table></figure>
 
 <p><code>theme</code>就是选择什么主题，也就是在<code>theme</code>这个文件夹下，在官网上有很多个主题，默认给你安装的是<code>lanscape</code>这个主题。当你需要更换主题时，在官网上下载，把主题的文件放在<code>theme</code>文件夹下，再修改这个参数就可以了。</p>
 <p>接下来这个<code>deploy</code>就是网站的部署的，<code>repo</code>就是仓库(<code>Repository</code>)的简写。<code>branch</code>选择仓库的哪个分支。这个在之前进行github page部署的时候已经修改过了，不再赘述。而这个在后面进行双平台部署的时候会再次用到。</p>
 <h4 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h4><p>Front-matter 是文件最上方以 <code>---</code> 分隔的区域，用于指定个别文件的变量，举例来说：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">title: Hello World
-date: 2013&#x2F;7&#x2F;13 20:46:25
----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight yaml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yaml"><span class="hljs-attr">title:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">World</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2013</span><span class="hljs-string">/7/13</span> <span class="hljs-number">20</span><span class="hljs-string">:46:25</span><br><span class="hljs-meta">---</span><br></code></pre></div></td></tr></table></figure>
 
 <p>下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
 <table>
@@ -593,15 +559,10 @@ date: 2013&#x2F;7&#x2F;13 20:46:25
 </tr>
 </tbody></table>
 <p>其中，分类和标签需要区别一下，分类具有顺序性和层次性，也就是说 <code>Foo, Bar</code> 不等于 <code>Bar, Foo</code>；而标签没有顺序和层次。</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">categories:
-- Diary
-tags:
-- PS3
-- Games
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight subunit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs subunit">categories:<br>- Diary<br><span class="hljs-keyword">tags:</span><br>- PS3<br>- Games<br><br></code></pre></div></td></tr></table></figure>
 
 <h4 id="layout（布局）"><a href="#layout（布局）" class="headerlink" title="layout（布局）"></a>layout（布局）</h4><p>当你每一次使用代码</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new paper<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight actionscript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs actionscript">hexo <span class="hljs-keyword">new</span> paper<br></code></pre></div></td></tr></table></figure>
 
 <p>它其实默认使用的是<code>post</code>这个布局，也就是在<code>source</code>文件夹下的<code>_post</code>里面。</p>
 <p>Hexo 有三种默认布局：<code>post</code>、<code>page</code> 和 <code>draft</code>，它们分别对应不同的路径，而您自定义的其他布局和 <code>post</code> 相同，都将储存到 <code>source/_posts</code> 文件夹。</p>
@@ -626,22 +587,22 @@ tags:
 </tr>
 </tbody></table>
 <p>而new这个命令其实是：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new [layout] &lt;title&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight gauss"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs gauss">hexo <span class="hljs-keyword">new</span> [layout] &lt;<span class="hljs-built_in">title</span>&gt;<br></code></pre></div></td></tr></table></figure>
 
 <p>只不过这个layout默认是post罢了。</p>
 <h5 id="page"><a href="#page" class="headerlink" title="page"></a>page</h5><p>如果你想另起一页，那么可以使用</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new page board<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight haxe"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs haxe">hexo <span class="hljs-keyword">new</span> <span class="hljs-type">page</span> board<br></code></pre></div></td></tr></table></figure>
 
 <p>系统会自动给你在source文件夹下创建一个board文件夹，<a target="_blank" rel="noopener" href="http://以及board文件夹中的index.md/">以及board文件夹中的index.md</a>，这样你访问的board对应的链接就是<code>http://xxx.xxx/board</code></p>
 <h5 id="draft"><a href="#draft" class="headerlink" title="draft"></a>draft</h5><p>draft是草稿的意思，也就是你如果想写文章，又不希望被看到，那么可以</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new draft newpage<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight haxe"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs haxe">hexo <span class="hljs-keyword">new</span> <span class="hljs-type">draft</span> <span class="hljs-keyword">new</span><span class="hljs-type">page</span><br></code></pre></div></td></tr></table></figure>
 
 <p>这样会在source/_draft中新建一个newpage.md文件，如果你的草稿文件写的过程中，想要预览一下，那么可以使用</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo server --draft<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight pgsql"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs pgsql">hexo <span class="hljs-keyword">server</span> <span class="hljs-comment">--draft</span><br></code></pre></div></td></tr></table></figure>
 
 <p>在本地端口中开启服务预览。</p>
 <p>如果你的草稿文件写完了，想要发表到post中，</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo publish draft newpage<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight ebnf"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo publish draft newpage</span><br></code></pre></div></td></tr></table></figure>
 
 <p>就会自动把newpage.md发送到post中。</p>
 <h2 id="2-更换主题"><a href="#2-更换主题" class="headerlink" title="2. 更换主题"></a>2. 更换主题</h2><p>到这一步，如果你觉得默认的<code>landscape</code>主题不好看，那么可以在官网的主题中，选择你喜欢的一个主题进行修改就可以啦。<a target="_blank" rel="noopener" href="https://hexo.io/themes/">点这里</a></p>
@@ -657,11 +618,11 @@ tags:
 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstfwjbj20jd0233ye.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="">
 
 <p>其中，About这个你是找不到网页的，因为你的文章中没有about这个东西。如果你想要的话，可以执行命令</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new page about<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight haxe"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs haxe">hexo <span class="hljs-keyword">new</span> <span class="hljs-type">page</span> about<br></code></pre></div></td></tr></table></figure>
 
 <p>它就会在根目录下<code>source</code>文件夹中新建了一个<code>about</code>文件夹，<a target="_blank" rel="noopener" href="http://以及index.md/">以及index.md</a>，在index.md中写上你想要写的东西，就可以在网站上展示出来了。</p>
 <p>如果你想要自己再自定义一个菜单栏的选项，那么就</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new page yourdiy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight haxe"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs haxe">hexo <span class="hljs-keyword">new</span> <span class="hljs-type">page</span> yourdiy<br></code></pre></div></td></tr></table></figure>
 
 <p>然后在主题配置文件的menu菜单栏添加一个 <code>Yourdiy : /yourdiy</code>，注意冒号后面要有空格，以及前面的空格要和menu中默认的保持整齐。然后在<code>languages</code>文件夹中，找到<code>zh-CN.yml</code>，在index中添加<code>yourdiy: &#39;中文意思&#39;</code>就可以显示中文了。</p>
 <h3 id="customize-定制"><a href="#customize-定制" class="headerlink" title="customize(定制)"></a>customize(定制)</h3><p>在这里可以修改你的个人logo，默认是那个hueman，在<code>source/css/images</code>文件夹中放入自己要的logo，再改一下<code>url</code>的链接名字就可以了。</p>
@@ -676,23 +637,14 @@ tags:
 <p>在我的理解中，如果你不想每天都被那些没有质量的消息轰炸，只想安安静静的关注几个博主，每天看一些有质量的内容也不用太多，那么RSS订阅值得你的拥有。</p>
 <p><strong>3. 添加RSS功能</strong></p>
 <p>先安装RSS插件</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">npm i hexo-generator-feed<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight coffeescript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> i hexo-generator-feed<br></code></pre></div></td></tr></table></figure>
 
 <p>而后在你整个项目的<code>_config.yml</code>中找到Extensions，添加：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none"># Extensions
-## Plugins: https:&#x2F;&#x2F;hexo.io&#x2F;plugins&#x2F;
-#RSS订阅
-plugin:
-- hexo-generator-feed
-#Feed Atom
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight dts"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs dts"><span class="hljs-meta"># Extensions</span><br><span class="hljs-meta">## Plugins: https:<span class="hljs-comment">//hexo.io/plugins/</span></span><br><span class="hljs-meta">#RSS订阅</span><br><span class="hljs-symbol">plugin:</span><br>- hexo-generator-feed<br><span class="hljs-meta">#Feed Atom</span><br><span class="hljs-symbol">feed:</span><br><span class="hljs-symbol">  type:</span> atom<br><span class="hljs-symbol">  path:</span> atom.xml<br><span class="hljs-symbol">  limit:</span> <span class="hljs-number">20</span><br></code></pre></div></td></tr></table></figure>
 
 <p>这个时候你的RSS链接就是 域名<code>/atom.xml</code>了。</p>
 <p>所以，在主题配置文件中的这个<code>social links</code>，开启RSS的页面功能，这样你网站上就有那个像wifi一样符号的RSS logo了，注意空格。</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">rss: &#x2F;atom.xml<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight avrasm"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs avrasm"><span class="hljs-symbol">rss:</span> /atom.xml<br></code></pre></div></td></tr></table></figure>
 
 <p><strong>4. 如何关注RSS？</strong></p>
 <p>首先，你需要一个RSS阅读器，在这里我推荐<code>inoreader</code>，宇宙第一RSS阅读器，而且中文支持的挺好。不过它没有PC端的程序，只有网页版，chrome上有插件。在官网上用google账号或者自己注册账号登录，就可以开始你的关注之旅了。</p>
@@ -702,14 +654,7 @@ feed:
 <p>在IOS端，没用过，好像是reader 3可以支持inoreader账户，还有个readon也不错，可以去试试。</p>
 <h3 id="widgets-侧边栏"><a href="#widgets-侧边栏" class="headerlink" title="widgets(侧边栏)"></a>widgets(侧边栏)</h3><p>侧边栏的小标签，如果你想自己增加一个，比如我增加了一个联系方式，那么我把<code>communication</code>写在上面，在<code>zh-CN.yml</code>中的<code>sidebar</code>，添加<code>communication: &#39;中文&#39;</code>。</p>
 <p>然后在<code>hueman/layout/widget</code>中添加一个<code>communicaiton.ejs</code>，填入模板：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;% if (site.posts.length) &#123; %&gt;
-    &lt;div class&#x3D;&quot;widget-wrap widget-list&quot;&gt;
-        &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;&lt;%&#x3D; __(&#39;sidebar.communiation&#39;) %&gt;&lt;&#x2F;h3&gt;
-        &lt;div class&#x3D;&quot;widget&quot;&gt;
-            &lt;!--这里添加你要写的内容--&gt;
-        &lt;&#x2F;div&gt;
-    &lt;&#x2F;div&gt;
-&lt;% &#125; %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight erb"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs erb"><span class="xml">&lt;%</span><span class="ruby"> <span class="hljs-keyword">if</span> (site.posts.length) &#123; </span><span class="xml">%&gt;</span><br><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;widget-wrap widget-list&quot;</span>&gt;</span></span><br><span class="xml">        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;widget-title&quot;</span>&gt;</span>&lt;%=</span><span class="ruby"> __(<span class="hljs-string">&#x27;sidebar.communiation&#x27;</span>) </span><span class="xml">%&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span></span><br><span class="xml">        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;widget&quot;</span>&gt;</span></span><br><span class="xml">            <span class="hljs-comment">&lt;!--这里添加你要写的内容--&gt;</span></span><br><span class="xml">        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br><span class="xml">    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br><span class="xml">&lt;%</span><span class="ruby"> &#125; </span><span class="xml">%&gt;</span><br></code></pre></div></td></tr></table></figure>
 
 <h3 id="search-搜索框"><a href="#search-搜索框" class="headerlink" title="search(搜索框)"></a>search(搜索框)</h3><p>默认搜索框是不能够用的，</p>
 <blockquote>
@@ -739,24 +684,16 @@ feed:
 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstl8uxj20ql0dsgmo.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="">
 
 <p>然后在本地的任意目录下，打开git bash，</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git clone git@github.com:ZJUFangzh&#x2F;ZJUFangzh.github.io.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight crmsh"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">git</span>@github.com:ZJUFangzh/ZJUFangzh.github.io.git<br></code></pre></div></td></tr></table></figure>
 
 <p>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p>
 <p>接下来在克隆到本地的<code>ZJUFangzh.github.io</code>中，把除了.git 文件夹外的所有文件都删掉</p>
 <p>把之前我们写的博客源文件全部复制过来，除了<code>.deploy_git</code>。这里应该说一句，复制过来的源文件应该有一个<code>.gitignore</code>，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">.DS_Store
-Thumbs.db
-db.json
-*.log
-node_modules&#x2F;
-public&#x2F;
-.deploy*&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight x86asm"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs x86asm"><span class="hljs-meta">.DS_Store</span><br>Thumbs<span class="hljs-number">.</span><span class="hljs-built_in">db</span><br><span class="hljs-built_in">db</span><span class="hljs-number">.</span>json<br>*.log<br>node_modules/<br><span class="hljs-meta">public</span>/<br><span class="hljs-meta">.deploy</span>*/<br></code></pre></div></td></tr></table></figure>
 
 <p>注意，如果你之前克隆过theme中的主题文件，那么应该把主题文件中的<code>.git</code>文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>
 <p>而后</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git add .
-git commit –m &quot;add branch&quot;
-git push <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight armasm"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs armasm"><span class="hljs-symbol">git</span> <span class="hljs-keyword">add</span> .<br><span class="hljs-symbol">git</span> commit –m <span class="hljs-string">&quot;add branch&quot;</span><br><span class="hljs-symbol">git</span> <span class="hljs-keyword">push</span> <br></code></pre></div></td></tr></table></figure>
 
 <p>这样就上传完了，可以去你的github上看一看hexo分支有没有上传上去，其中<code>node_modules</code>、<code>public</code>、<code>db.json</code>已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p>
 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstk4k1j20yq0h9gmr.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="">
@@ -766,62 +703,51 @@ git push <span aria-hidden="true" class="line-numbers-rows"><span></span><span><
 <ul>
 <li>安装git</li>
 </ul>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight routeros"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs routeros">sudo apt-<span class="hljs-builtin-name">get</span> install git<br></code></pre></div></td></tr></table></figure>
 
 <ul>
 <li>设置git全局邮箱和用户名</li>
 </ul>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git config --global user.name &quot;yourgithubname&quot;
-git config --global user.email &quot;yourgithubemail&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+<figure class="highlight verilog"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs verilog">git <span class="hljs-keyword">config</span> --<span class="hljs-keyword">global</span> user<span class="hljs-variable">.name</span> <span class="hljs-string">&quot;yourgithubname&quot;</span><br>git <span class="hljs-keyword">config</span> --<span class="hljs-keyword">global</span> user<span class="hljs-variable">.email</span> <span class="hljs-string">&quot;yourgithubemail&quot;</span><br></code></pre></div></td></tr></table></figure>
 
 <ul>
 <li>设置ssh key</li>
 </ul>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t rsa -C &quot;youremail&quot;
-#生成后填到github和coding上（有coding平台的话）
-#验证是否成功
-ssh -T git@github.com
-ssh -T git@git.coding.net #(有coding平台的话)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight autoit"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs autoit">ssh-keygen -t rsa -C <span class="hljs-string">&quot;youremail&quot;</span><br><span class="hljs-meta">#生成后填到github和coding上（有coding平台的话）</span><br><span class="hljs-meta">#验证是否成功</span><br>ssh -T git<span class="hljs-symbol">@github</span>.com<br>ssh -T git<span class="hljs-symbol">@git</span>.coding.net <span class="hljs-meta">#(有coding平台的话)</span><br></code></pre></div></td></tr></table></figure>
 
 <ul>
 <li>安装nodejs</li>
 </ul>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">sudo apt-get install nodejs
-sudo apt-get install npm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+<figure class="highlight routeros"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs routeros">sudo apt-<span class="hljs-builtin-name">get</span> install nodejs<br>sudo apt-<span class="hljs-builtin-name">get</span> install npm<br></code></pre></div></td></tr></table></figure>
 
 <ul>
 <li>安装hexo</li>
 </ul>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">sudo npm install hexo-cli -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight avrasm"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs avrasm">sudo npm install hexo-<span class="hljs-keyword">cli</span> -g<br></code></pre></div></td></tr></table></figure>
 
 <p>但是已经不需要初始化了，</p>
 <p>直接在任意文件夹下，</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git clone git@………………<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight crmsh"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">git</span>@………………<br></code></pre></div></td></tr></table></figure>
 
 <p>然后进入克隆到的文件夹：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">cd xxx.github.io
-npm install
-npm install hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight cmake"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs cmake">cd xxx.github.io<br>npm <span class="hljs-keyword">install</span><br>npm <span class="hljs-keyword">install</span> hexo-deployer-git --save<br></code></pre></div></td></tr></table></figure>
 
 <p>生成，部署：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo g
-hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+<figure class="highlight ebnf"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br><span class="hljs-attribute">hexo d</span><br></code></pre></div></td></tr></table></figure>
 
 <p>然后就可以开始写你的新博客了</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo new newpage<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight actionscript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs actionscript">hexo <span class="hljs-keyword">new</span> newpage<br></code></pre></div></td></tr></table></figure>
 
 <p><strong>Tips:</strong></p>
 <ol>
 <li>不要忘了，每次写完最好都把源文件上传一下</li>
 </ol>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git add .
-git commit –m &quot;xxxx&quot;
-git push <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight armasm"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs armasm"><span class="hljs-symbol">git</span> <span class="hljs-keyword">add</span> .<br><span class="hljs-symbol">git</span> commit –m <span class="hljs-string">&quot;xxxx&quot;</span><br><span class="hljs-symbol">git</span> <span class="hljs-keyword">push</span> <br></code></pre></div></td></tr></table></figure>
 
 <ol>
 <li>如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了</li>
 </ol>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">git pull<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight ebnf"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs ebnf"><span class="hljs-attribute">git pull</span><br></code></pre></div></td></tr></table></figure>
 
 <h2 id="4-coding-page上部署实现国内外分流"><a href="#4-coding-page上部署实现国内外分流" class="headerlink" title="4. coding page上部署实现国内外分流"></a>4. coding page上部署实现国内外分流</h2><blockquote>
 <p>PS：现在coding pages只能免费试用180天，过后0.06元一个月</p>
@@ -834,28 +760,18 @@ git push <span aria-hidden="true" class="line-numbers-rows"><span></span><span><
 <p><strong>2. 添加ssh key</strong></p>
 <p>这一步跟github一样。</p>
 <p>添加后，检查一下是不是添加成功</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">ssh -T git@git.coding.net<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight angelscript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs angelscript">ssh -T <span class="hljs-symbol">git@</span>git.coding.net<br></code></pre></div></td></tr></table></figure>
 
 <p><strong>3. 修改_config.yml</strong></p>
 <p>hexo官方文档是这样的：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">deploy:
-  type: git
-  message: [message]
-  repo:
-    github: &lt;repository url&gt;,[branch]
-    coding: &lt;repository url&gt;,[branch] <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight dts"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs dts"><span class="hljs-symbol">deploy:</span><br><span class="hljs-symbol">  type:</span> git<br><span class="hljs-symbol">  message:</span> [message]<br><span class="hljs-symbol">  repo:</span><br><span class="hljs-symbol">    github:</span> <span class="hljs-params">&lt;repository url&gt;</span>,[branch]<br><span class="hljs-symbol">    coding:</span> <span class="hljs-params">&lt;repository url&gt;</span>,[branch] <br></code></pre></div></td></tr></table></figure>
 
 <p>那么，我们只需要：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">deploy:
-  type: git
-  repo: 
-    coding: git@git.coding.net:ZJUFangzh&#x2F;ZJUFangzh.git,master
-    github: git@github.com:ZJUFangzh&#x2F;ZJUFangzh.github.io.git,master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight stylus"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs stylus">deploy:<br>  type: git<br>  repo: <br>    coding: git@git<span class="hljs-selector-class">.coding</span><span class="hljs-selector-class">.net</span>:ZJUFangzh/ZJUFangzh<span class="hljs-selector-class">.git</span>,master<br>    github: git@github<span class="hljs-selector-class">.com</span>:ZJUFangzh/ZJUFangzh<span class="hljs-selector-class">.github</span><span class="hljs-selector-class">.io</span><span class="hljs-selector-class">.git</span>,master<br></code></pre></div></td></tr></table></figure>
 
 <p><strong>4. 部署</strong></p>
 <p>保存一下，直接</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">hexo g
-hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+<figure class="highlight ebnf"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br><span class="hljs-attribute">hexo d</span><br></code></pre></div></td></tr></table></figure>
 
 <p>这样就可以在coding的项目上看到你部署的文件了。</p>
 <p><strong>5. 开启coding pages服务，绑定域名</strong></p>
@@ -872,14 +788,13 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstmpshj20j80cbmxq.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="">
 
 <p>只要你在页面上添加一行文字，写<code>Hosted by Coding Pages</code>，然后点下面的小勾勾，两个工作日内它就会审核通过了。</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;p&gt;Hosted by &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;pages.coding.me&quot; style&#x3D;&quot;font-weight: bold&quot;&gt;Coding Pages&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight xml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hosted by <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://pages.coding.me&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;font-weight: bold&quot;</span>&gt;</span>Coding Pages<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><br></code></pre></div></td></tr></table></figure>
 
 <p>我的选择是把这一行代码放在主题文件夹<code>/layout/common/footer.ejs</code>里面，也就是本来在页面中看到的页脚部分。</p>
 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstk1skj20lh0630su.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="">
 
 <p>当然，为了统一，我又在后面加上了and <strong>Github</strong>哈哈，可以不加。</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;p&gt;&lt;span&gt;Hosted by &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;pages.coding.me&quot; style&#x3D;&quot;font-weight: bold&quot;&gt;Coding Pages&lt;&#x2F;a&gt;&lt;&#x2F;span&gt; and &lt;span&gt;&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;github.com&quot; style&#x3D;&quot;font-weight: bold&quot;&gt;Github&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight xml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Hosted by <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://pages.coding.me&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;font-weight: bold&quot;</span>&gt;</span>Coding Pages<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> and <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;font-weight: bold&quot;</span>&gt;</span>Github<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br></code></pre></div></td></tr></table></figure>
 
 <p>这是最终加上去的代码。</p>
 <h1 id="第三部分"><a href="#第三部分" class="headerlink" title="第三部分"></a>第三部分</h1><p>hexo添加各种功能，包括搜索的SEO，阅读量统计，访问量统计和评论系统等。</p>
@@ -896,8 +811,7 @@ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
 <p>第三种方式最简单，只要将它提供给你的那个xxxxx使用CNAME解析到xxx.baidu.com就可以了。也就是登录你的阿里云，把这个解析填进去就OK了。</p>
 <p><strong>2. 提交链接</strong></p>
 <p>我们需要使用npm自动生成网站的sitemap，然后将生成的sitemap提交到百度和其他搜索引擎</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-sitemap --save     
-npm install hexo-generator-baidu-sitemap --save<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+<figure class="highlight mipsasm"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs mipsasm">npm <span class="hljs-keyword">install </span>hexo-generator-sitemap --save     <br>npm <span class="hljs-keyword">install </span>hexo-generator-<span class="hljs-keyword">baidu-sitemap </span>--save<br></code></pre></div></td></tr></table></figure>
 
 <p>这时候你需要在你的根目录下<code>_config.xml</code>中看看url有没有改成你自己的：</p>
 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstpzd9j20ar03b749.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="">
@@ -924,7 +838,7 @@ npm install hexo-generator-baidu-sitemap --save<span aria-hidden="true" class="l
 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrksu93vyj20tk0m440w.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="">
 
 <p>获取安装代码后，在主题的comment下新建一个文件放入刚刚那段代码，再找到article文件，找到如下代码，若没有则直接在footer后面添加即可。livebe即为刚刚所创文件名称。</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;%- partial(&#39;comment&#x2F;livebe&#39;) %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight gcode"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs gcode">&lt;<span class="hljs-meta">%</span>- partial<span class="hljs-comment">(&#x27;comment/livebe&#x27;)</span> <span class="hljs-meta">%</span>&gt;<br></code></pre></div></td></tr></table></figure>
 
 <p>然后可以自己设置一些东西：</p>
 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrksufavtj20v70o9mzw.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="">
@@ -942,65 +856,18 @@ npm install hexo-generator-baidu-sitemap --save<span aria-hidden="true" class="l
 <img src="http://tva2.sinaimg.com/large/d40b6c29gy1fvrkstygbpj20gq0k0abm.jpg" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="">
 
 <p>然后在设置页面看到你的<code>应用Key</code>，在主题的配置文件中：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">leancloud_visitors:
-  enable: true
-  app_id: 你的id
-  app_key: 你的key
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight yaml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yaml"><span class="hljs-attr">leancloud_visitors:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">app_id:</span> <span class="hljs-string">你的id</span><br>  <span class="hljs-attr">app_key:</span> <span class="hljs-string">你的key</span><br><br></code></pre></div></td></tr></table></figure>
 
 <p>在<code>article.ejs</code>中适当的位置添加如下，这要看你让文章的阅读量统计显示在哪个地方了，</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">阅读数量:&lt;span id&#x3D;&quot;&lt;%&#x3D; url_for(post.path) %&gt;&quot; class&#x3D;&quot;leancloud_visitors&quot; data-flag-title&#x3D;&quot;&lt;%- post.title %&gt;&quot;&gt;&lt;&#x2F;span&gt;次
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+<figure class="highlight routeros"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs routeros">阅读数量:&lt;span <span class="hljs-attribute">id</span>=<span class="hljs-string">&quot;&lt;%= url_for(post.path) %&gt;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-string">&quot;leancloud_visitors&quot;</span> <span class="hljs-attribute">data-flag-title</span>=<span class="hljs-string">&quot;&lt;%- post.title %&gt;&quot;</span>&gt;&lt;/span&gt;次<br><br></code></pre></div></td></tr></table></figure>
 
 <p>然后在<code>footer.ejs</code>的最后，添加：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;script src&#x3D;&quot;&#x2F;&#x2F;cdn1.lncld.net&#x2F;static&#x2F;js&#x2F;2.5.0&#x2F;av-min.js&quot;&gt;&lt;&#x2F;script&gt;
-&lt;script&gt;
-    var APP_ID &#x3D; &#39;你的app id&#39;;
-    var APP_KEY &#x3D; &#39;你的app key&#39;;
-    AV.init(&#123;
-        appId: APP_ID,
-        appKey: APP_KEY
-    &#125;);
-    &#x2F;&#x2F; 显示次数
-    function showTime(Counter) &#123;
-        var query &#x3D; new AV.Query(&quot;Counter&quot;);
-        if($(&quot;.leancloud_visitors&quot;).length &gt; 0)&#123;
-            var url &#x3D; $(&quot;.leancloud_visitors&quot;).attr(&#39;id&#39;).trim();
-            &#x2F;&#x2F; where field
-            query.equalTo(&quot;words&quot;, url);
-            &#x2F;&#x2F; count
-            query.count().then(function (number) &#123;
-                &#x2F;&#x2F; There are number instances of MyClass where words equals url.
-                $(document.getElementById(url)).text(number?  number : &#39;--&#39;);
-            &#125;, function (error) &#123;
-                &#x2F;&#x2F; error is an instance of AVError.
-            &#125;);
-        &#125;
-    &#125;
-    &#x2F;&#x2F; 追加pv
-    function addCount(Counter) &#123;
-        var url &#x3D; $(&quot;.leancloud_visitors&quot;).length &gt; 0 ? $(&quot;.leancloud_visitors&quot;).attr(&#39;id&#39;).trim() : &#39;icafebolger.com&#39;;
-        var Counter &#x3D; AV.Object.extend(&quot;Counter&quot;);
-        var query &#x3D; new Counter;
-        query.save(&#123;
-            words: url
-        &#125;).then(function (object) &#123;
-        &#125;)
-    &#125;
-    $(function () &#123;
-        var Counter &#x3D; AV.Object.extend(&quot;Counter&quot;);
-        addCount(Counter);
-        showTime(Counter);
-    &#125;);
-&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight xml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;//cdn1.lncld.net/static/js/2.5.0/av-min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><br><span class="javascript">    <span class="hljs-keyword">var</span> APP_ID = <span class="hljs-string">&#x27;你的app id&#x27;</span>;</span><br><span class="javascript">    <span class="hljs-keyword">var</span> APP_KEY = <span class="hljs-string">&#x27;你的app key&#x27;</span>;</span><br>    AV.init(&#123;<br>        appId: APP_ID,<br>        appKey: APP_KEY<br>    &#125;);<br><span class="javascript">    <span class="hljs-comment">// 显示次数</span></span><br><span class="javascript">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">showTime</span>(<span class="hljs-params">Counter</span>) </span>&#123;</span><br><span class="javascript">        <span class="hljs-keyword">var</span> query = <span class="hljs-keyword">new</span> AV.Query(<span class="hljs-string">&quot;Counter&quot;</span>);</span><br><span class="javascript">        <span class="hljs-keyword">if</span>($(<span class="hljs-string">&quot;.leancloud_visitors&quot;</span>).length &gt; <span class="hljs-number">0</span>)&#123;</span><br><span class="javascript">            <span class="hljs-keyword">var</span> url = $(<span class="hljs-string">&quot;.leancloud_visitors&quot;</span>).attr(<span class="hljs-string">&#x27;id&#x27;</span>).trim();</span><br><span class="javascript">            <span class="hljs-comment">// where field</span></span><br><span class="javascript">            query.equalTo(<span class="hljs-string">&quot;words&quot;</span>, url);</span><br><span class="javascript">            <span class="hljs-comment">// count</span></span><br><span class="javascript">            query.count().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">number</span>) </span>&#123;</span><br><span class="javascript">                <span class="hljs-comment">// There are number instances of MyClass where words equals url.</span></span><br><span class="javascript">                $(<span class="hljs-built_in">document</span>.getElementById(url)).text(number?  number : <span class="hljs-string">&#x27;--&#x27;</span>);</span><br><span class="javascript">            &#125;, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error</span>) </span>&#123;</span><br><span class="javascript">                <span class="hljs-comment">// error is an instance of AVError.</span></span><br>            &#125;);<br>        &#125;<br>    &#125;<br><span class="javascript">    <span class="hljs-comment">// 追加pv</span></span><br><span class="javascript">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addCount</span>(<span class="hljs-params">Counter</span>) </span>&#123;</span><br><span class="javascript">        <span class="hljs-keyword">var</span> url = $(<span class="hljs-string">&quot;.leancloud_visitors&quot;</span>).length &gt; <span class="hljs-number">0</span> ? $(<span class="hljs-string">&quot;.leancloud_visitors&quot;</span>).attr(<span class="hljs-string">&#x27;id&#x27;</span>).trim() : <span class="hljs-string">&#x27;icafebolger.com&#x27;</span>;</span><br><span class="javascript">        <span class="hljs-keyword">var</span> Counter = AV.Object.extend(<span class="hljs-string">&quot;Counter&quot;</span>);</span><br><span class="javascript">        <span class="hljs-keyword">var</span> query = <span class="hljs-keyword">new</span> Counter;</span><br>        query.save(&#123;<br>            words: url<br><span class="javascript">        &#125;).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">object</span>) </span>&#123;</span><br>        &#125;)<br>    &#125;<br><span class="javascript">    $(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;</span><br><span class="javascript">        <span class="hljs-keyword">var</span> Counter = AV.Object.extend(<span class="hljs-string">&quot;Counter&quot;</span>);</span><br>        addCount(Counter);<br>        showTime(Counter);<br>    &#125;);<br><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></div></td></tr></table></figure>
 
 <p>重新部署后就可以了。</p>
 <h2 id="5-引入不蒜子访问量和访问人次统计"><a href="#5-引入不蒜子访问量和访问人次统计" class="headerlink" title="5. 引入不蒜子访问量和访问人次统计"></a>5. 引入不蒜子访问量和访问人次统计</h2><p>不蒜子的添加非常非常方便，<a target="_blank" rel="noopener" href="http://busuanzi.ibruce.info/">不蒜子</a></p>
 <p>在<code>footer.ejs</code>中的合适位置，看你要显示在哪个地方，添加：</p>
-<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&lt;!--这一段是不蒜子的访问量统计代码--&gt;
-&lt;script async src&#x3D;&quot;&#x2F;&#x2F;dn-lbstatics.qbox.me&#x2F;busuanzi&#x2F;2.3&#x2F;busuanzi.pure.mini.js&quot;&gt;&lt;&#x2F;script&gt;
-&lt;span id&#x3D;&quot;busuanzi_container_site_pv&quot;&gt;本站总访问量&lt;span id&#x3D;&quot;busuanzi_value_site_pv&quot;&gt;&lt;&#x2F;span&gt;次 &amp;nbsp;   &lt;&#x2F;span&gt;
-&lt;span id&#x3D;&quot;busuanzi_container_site_uv&quot;&gt;访客数&lt;span id&#x3D;&quot;busuanzi_value_site_uv&quot;&gt;&lt;&#x2F;span&gt;人次&lt;&#x2F;span&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+<figure class="highlight xml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs xml"><span class="hljs-comment">&lt;!--这一段是不蒜子的访问量统计代码--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">async</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;busuanzi_container_site_pv&quot;</span>&gt;</span>本站总访问量<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;busuanzi_value_site_pv&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>次 <span class="hljs-symbol">&amp;nbsp;</span>   <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;busuanzi_container_site_uv&quot;</span>&gt;</span>访客数<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;busuanzi_value_site_uv&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>人次<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br></code></pre></div></td></tr></table></figure>
 
 <p>就可以了。</p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>到这里就基本做完了。其实都是参考别的博主的设置的，不一定仅限于hueman主题，其他主题的设置也是大体相同的，所以如果你希望设置别的主题，那么仔细看一下这个主题的代码结构，也能够把上边的功能添加进去。</p>
@@ -1201,8 +1068,6 @@ npm install hexo-generator-baidu-sitemap --save<span aria-hidden="true" class="l
 
 
 
-  
-    
   
 
 
