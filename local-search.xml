@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>电子书下载</title>
+    <link href="/posts/dzsxz.html"/>
+    <url>/posts/dzsxz.html</url>
+    
+    <content type="html"><![CDATA[<p>最近刚发现一个宝藏网站，可以下载很多电子书</p><p><a href="https://yabook.org/">雅书 - PDF电子书学习下载站 (yabook.org)</a></p><p><img src="https://z3.ax1x.com/2021/07/21/WauISI.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload></p><p>但需要注意的是，中国大陆的IP访问<code>yabook.org</code>会被跳转到<code>yabook.blog</code>，在<code>yabook.blog</code>不提供下载<br>我想这也许是版权原因<br>所以说要下载电子书就得开梯子访问</p><p><img src="https://z3.ax1x.com/2021/07/21/Wau4fA.png" srcset="https://cdn.jsdelivr.net/gh/lxh20061128/image/img/loading.svg" lazyload alt="没有开梯子"></p><p>居然连网站左边的介绍都不一样？</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>原创</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>电子书</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hexo建站教程</title>
     <link href="/posts/hexojc.html"/>
     <url>/posts/hexojc.html</url>
